@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
         printMessage("Hi! my name is Max");
-        printSum(2, 9);
+        printSum(2, 10);
         System.out.println(multiply(2, 4));
 
 
