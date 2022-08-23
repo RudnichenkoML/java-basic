@@ -1,6 +1,6 @@
-package com.reference;
+package com.variables_operators;
 
-public class Primitive {
+public class Main {
     public static void main(String[] args) {
     }
 }
