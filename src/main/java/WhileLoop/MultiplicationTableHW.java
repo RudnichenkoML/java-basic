@@ -12,6 +12,5 @@ public class MultiplicationTableHW {
             h++;
             System.out.println();
         }
-
     }
 }
