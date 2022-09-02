@@ -1,5 +1,8 @@
 package WhileLoop;
 
+import static Lesson_5.Lesson5.PUBLIC_MODIFIER;
+
+
 public class MultiplicationTableHW {
     public static void main(String[] args) {
         int h=1;
@@ -12,5 +15,8 @@ public class MultiplicationTableHW {
             h++;
             System.out.println();
         }
+        System.out.println(PUBLIC_MODIFIER);
+
     }
+
 }
