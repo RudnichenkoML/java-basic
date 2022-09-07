@@ -8,7 +8,6 @@ public class TaxiCar extends Car {
     @Override
     public void setEngine() {
         System.out.println("TaxiCar engine: ");
-        TaxiEngine taxiEngine = new TaxiEngine();
         engine.setEngine();
     }
 }
