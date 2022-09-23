@@ -10,7 +10,8 @@ public class Cat {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Cat cat)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
+        Cat cat = (Cat) o;
         return age == cat.age && name.equals(cat.name);
     }
 

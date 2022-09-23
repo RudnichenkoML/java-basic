@@ -1,0 +1,2713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>!function(e, n) {
+    for (var t in n)
+        e[t] = n[t]
+}(this, function(e) {
+    var n = {};
+    function t(a) {
+        if (n[a])
+            return n[a].exports;
+        var o = n[a] = {
+            i: a,
+            l: !1,
+            exports: {}
+        };
+        return e[a].call(o.exports, o, o.exports, t),
+        o.l = !0,
+        o.exports
+    }
+    return t.m = e,
+    t.c = n,
+    t.d = function(e, n, a) {
+        t.o(e, n) || Object.defineProperty(e, n, {
+            enumerable: !0,
+            get: a
+        })
+    }
+    ,
+    t.r = function(e) {
+        "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+            value: "Module"
+        }),
+        Object.defineProperty(e, "__esModule", {
+            value: !0
+        })
+    }
+    ,
+    t.t = function(e, n) {
+        if (1 & n && (e = t(e)),
+        8 & n)
+            return e;
+        if (4 & n && "object" == typeof e && e && e.__esModule)
+            return e;
+        var a = Object.create(null);
+        if (t.r(a),
+        Object.defineProperty(a, "default", {
+            enumerable: !0,
+            value: e
+        }),
+        2 & n && "string" != typeof e)
+            for (var o in e)
+                t.d(a, o, function(n) {
+                    return e[n]
+                }
+                .bind(null, o));
+        return a
+    }
+    ,
+    t.n = function(e) {
+        var n = e && e.__esModule ? function() {
+            return e.default
+        }
+        : function() {
+            return e
+        }
+        ;
+        return t.d(n, "a", n),
+        n
+    }
+    ,
+    t.o = function(e, n) {
+        return Object.prototype.hasOwnProperty.call(e, n)
+    }
+    ,
+    t.p = "",
+    t(t.s = 6)
+}([function(e, n) {
+    var t = [{
+        country: "AU",
+        code: "ACT",
+        name: "Australian Capital Territory"
+    }, {
+        country: "AU",
+        code: "NSW",
+        name: "New South Wales"
+    }, {
+        country: "AU",
+        code: "NT",
+        name: "Northern Territory"
+    }, {
+        country: "AU",
+        code: "QLD",
+        name: "Queensland"
+    }, {
+        country: "AU",
+        code: "SA",
+        name: "South Australia"
+    }, {
+        country: "AU",
+        code: "TAS",
+        name: "Tasmania"
+    }, {
+        country: "AU",
+        code: "VIC",
+        name: "Victoria"
+    }, {
+        country: "AU",
+        code: "WA",
+        name: "Western Australia"
+    }, {
+        country: "CA",
+        code: "AB",
+        name: "Alberta"
+    }, {
+        country: "CA",
+        code: "BC",
+        name: "British Columbia"
+    }, {
+        country: "CA",
+        code: "MB",
+        name: "Manitoba"
+    }, {
+        country: "CA",
+        code: "NB",
+        name: "New Brunswick"
+    }, {
+        country: "CA",
+        code: "NL",
+        name: "Newfoundland and Labrador"
+    }, {
+        country: "CA",
+        code: "NT",
+        name: "Northwest Territories"
+    }, {
+        country: "CA",
+        code: "NS",
+        name: "Nova Scotia"
+    }, {
+        country: "CA",
+        code: "NU",
+        name: "Nunavut"
+    }, {
+        country: "CA",
+        code: "ON",
+        name: "Ontario"
+    }, {
+        country: "CA",
+        code: "PE",
+        name: "Prince Edward Island"
+    }, {
+        country: "CA",
+        code: "QC",
+        name: "Quebec"
+    }, {
+        country: "CA",
+        code: "SK",
+        name: "Saskatchewan"
+    }, {
+        country: "CA",
+        code: "YT",
+        name: "Yukon"
+    }, {
+        country: "US",
+        code: "AL",
+        name: "Alabama"
+    }, {
+        country: "US",
+        code: "AK",
+        name: "Alaska"
+    }, {
+        country: "US",
+        code: "AS",
+        name: "American Samoa"
+    }, {
+        country: "US",
+        code: "AZ",
+        name: "Arizona"
+    }, {
+        country: "US",
+        code: "AR",
+        name: "Arkansas"
+    }, {
+        country: "US",
+        code: "CA",
+        name: "California"
+    }, {
+        country: "US",
+        code: "CO",
+        name: "Colorado"
+    }, {
+        country: "US",
+        code: "CT",
+        name: "Connecticut"
+    }, {
+        country: "US",
+        code: "DE",
+        name: "Delaware"
+    }, {
+        country: "US",
+        code: "DC",
+        name: "District of Columbia"
+    }, {
+        country: "US",
+        code: "FL",
+        name: "Florida"
+    }, {
+        country: "US",
+        code: "GA",
+        name: "Georgia"
+    }, {
+        country: "US",
+        code: "GU",
+        name: "Guam"
+    }, {
+        country: "US",
+        code: "HI",
+        name: "Hawaii"
+    }, {
+        country: "US",
+        code: "ID",
+        name: "Idaho"
+    }, {
+        country: "US",
+        code: "IL",
+        name: "Illinois"
+    }, {
+        country: "US",
+        code: "IN",
+        name: "Indiana"
+    }, {
+        country: "US",
+        code: "IA",
+        name: "Iowa"
+    }, {
+        country: "US",
+        code: "KS",
+        name: "Kansas"
+    }, {
+        country: "US",
+        code: "KY",
+        name: "Kentucky"
+    }, {
+        country: "US",
+        code: "LA",
+        name: "Louisiana"
+    }, {
+        country: "US",
+        code: "ME",
+        name: "Maine"
+    }, {
+        country: "US",
+        code: "MD",
+        name: "Maryland"
+    }, {
+        country: "US",
+        code: "MA",
+        name: "Massachusetts"
+    }, {
+        country: "US",
+        code: "MI",
+        name: "Michigan"
+    }, {
+        country: "US",
+        code: "MN",
+        name: "Minnesota"
+    }, {
+        country: "US",
+        code: "MS",
+        name: "Mississippi"
+    }, {
+        country: "US",
+        code: "MO",
+        name: "Missouri"
+    }, {
+        country: "US",
+        code: "MT",
+        name: "Montana"
+    }, {
+        country: "US",
+        code: "NE",
+        name: "Nebraska"
+    }, {
+        country: "US",
+        code: "NV",
+        name: "Nevada"
+    }, {
+        country: "US",
+        code: "NH",
+        name: "New Hampshire"
+    }, {
+        country: "US",
+        code: "NJ",
+        name: "New Jersey"
+    }, {
+        country: "US",
+        code: "NM",
+        name: "New Mexico"
+    }, {
+        country: "US",
+        code: "NY",
+        name: "New York"
+    }, {
+        country: "US",
+        code: "NC",
+        name: "North Carolina"
+    }, {
+        country: "US",
+        code: "ND",
+        name: "North Dakota"
+    }, {
+        country: "US",
+        code: "OH",
+        name: "Ohio"
+    }, {
+        country: "US",
+        code: "OK",
+        name: "Oklahoma"
+    }, {
+        country: "US",
+        code: "OR",
+        name: "Oregon"
+    }, {
+        country: "US",
+        code: "PA",
+        name: "Pennsylvania"
+    }, {
+        country: "US",
+        code: "PR",
+        name: "Puerto Rico"
+    }, {
+        country: "US",
+        code: "RI",
+        name: "Rhode Island"
+    }, {
+        country: "US",
+        code: "SC",
+        name: "South Carolina"
+    }, {
+        country: "US",
+        code: "SD",
+        name: "South Dakota"
+    }, {
+        country: "US",
+        code: "TN",
+        name: "Tennessee"
+    }, {
+        country: "US",
+        code: "TX",
+        name: "Texas"
+    }, {
+        country: "US",
+        code: "UT",
+        name: "Utah"
+    }, {
+        country: "US",
+        code: "VT",
+        name: "Vermont"
+    }, {
+        country: "US",
+        code: "VI",
+        name: "Virgin Islands"
+    }, {
+        country: "US",
+        code: "VA",
+        name: "Virginia"
+    }, {
+        country: "US",
+        code: "WA",
+        name: "Washington"
+    }, {
+        country: "US",
+        code: "WV",
+        name: "West Virginia"
+    }, {
+        country: "US",
+        code: "WI",
+        name: "Wisconsin"
+    }, {
+        country: "US",
+        code: "WY",
+        name: "Wyoming"
+    }];
+    e.exports = {
+        states: t,
+        renderStateOptions: function(e) {
+            var n = '<option value=""></option>';
+            return t.filter((function(n) {
+                return n.country === e
+            }
+            )).forEach((function(e) {
+                n += '<option value="' + e.code + '">' + e.name + "</option>"
+            }
+            )),
+            n
+        },
+        needRenderState: function(e) {
+            return e && t.some((function(n) {
+                return n.country === e
+            }
+            ))
+        },
+        getIndex: function(e, n) {
+            return t.filter((function(n) {
+                return n.country === e
+            }
+            )).findIndex((function(e) {
+                return n === e.code
+            }
+            )) + 1
+        }
+    }
+}
+, function(e, n) {
+    var t, a = [{
+        id: 1,
+        name: "Åland Islands",
+        code: "AX"
+    }, {
+        id: 2,
+        name: "Afghanistan",
+        code: "AF"
+    }, {
+        id: 3,
+        name: "Albania",
+        code: "AL"
+    }, {
+        id: 4,
+        name: "Algeria",
+        code: "DZ"
+    }, {
+        id: 5,
+        name: "American Samoa",
+        code: "AS"
+    }, {
+        id: 6,
+        name: "Andorra",
+        code: "AD"
+    }, {
+        id: 7,
+        name: "Angola",
+        code: "AO"
+    }, {
+        id: 8,
+        name: "Anguilla",
+        code: "AI"
+    }, {
+        id: 9,
+        name: "Antarctica",
+        code: "AQ"
+    }, {
+        id: 10,
+        name: "Antigua and Barbuda",
+        code: "AG"
+    }, {
+        id: 11,
+        name: "Argentina",
+        code: "AR"
+    }, {
+        id: 12,
+        name: "Armenia",
+        code: "AM"
+    }, {
+        id: 13,
+        name: "Aruba",
+        code: "AW"
+    }, {
+        id: 14,
+        name: "Australia",
+        code: "AU"
+    }, {
+        id: 15,
+        name: "Austria",
+        code: "AT"
+    }, {
+        id: 16,
+        name: "Azerbaijan",
+        code: "AZ"
+    }, {
+        id: 17,
+        name: "Bahamas",
+        code: "BS"
+    }, {
+        id: 18,
+        name: "Bahrain",
+        code: "BH"
+    }, {
+        id: 19,
+        name: "Bangladesh",
+        code: "BD"
+    }, {
+        id: 20,
+        name: "Barbados",
+        code: "BB"
+    }, {
+        id: 21,
+        name: "Belarus",
+        code: "BY"
+    }, {
+        id: 22,
+        name: "Belgium",
+        code: "BE"
+    }, {
+        id: 23,
+        name: "Belize",
+        code: "BZ"
+    }, {
+        id: 24,
+        name: "Benin",
+        code: "BJ"
+    }, {
+        id: 25,
+        name: "Bermuda",
+        code: "BM"
+    }, {
+        id: 26,
+        name: "Bhutan",
+        code: "BT"
+    }, {
+        id: 27,
+        name: "Bolivia, Plurinational State of",
+        code: "BO"
+    }, {
+        id: 28,
+        name: "Bosnia and Herzegovina",
+        code: "BA"
+    }, {
+        id: 29,
+        name: "Botswana",
+        code: "BW"
+    }, {
+        id: 30,
+        name: "Bouvet Island",
+        code: "BV"
+    }, {
+        id: 31,
+        name: "Brazil",
+        code: "BR"
+    }, {
+        id: 32,
+        name: "British Indian Ocean Territory",
+        code: "IO"
+    }, {
+        id: 33,
+        name: "Brunei Darussalam",
+        code: "BN"
+    }, {
+        id: 34,
+        name: "Bulgaria",
+        code: "BG"
+    }, {
+        id: 35,
+        name: "Burkina Faso",
+        code: "BF"
+    }, {
+        id: 36,
+        name: "Burundi",
+        code: "BI"
+    }, {
+        id: 37,
+        name: "Cambodia",
+        code: "KH"
+    }, {
+        id: 38,
+        name: "Cameroon",
+        code: "CM"
+    }, {
+        id: 39,
+        name: "Canada",
+        code: "CA"
+    }, {
+        id: 40,
+        name: "Cabo Verde",
+        code: "CV"
+    }, {
+        id: 41,
+        name: "Cayman Islands",
+        code: "KY"
+    }, {
+        id: 42,
+        name: "Central African Republic",
+        code: "CF"
+    }, {
+        id: 43,
+        name: "Chad",
+        code: "TD"
+    }, {
+        id: 44,
+        name: "Chile",
+        code: "CL"
+    }, {
+        id: 45,
+        name: "China",
+        code: "CN"
+    }, {
+        id: 46,
+        name: "Christmas Island",
+        code: "CX"
+    }, {
+        id: 47,
+        name: "Cocos (Keeling) Islands",
+        code: "CC"
+    }, {
+        id: 48,
+        name: "Colombia",
+        code: "CO"
+    }, {
+        id: 49,
+        name: "Comoros",
+        code: "KM"
+    }, {
+        id: 50,
+        name: "Congo",
+        code: "CG"
+    }, {
+        id: 51,
+        name: "Congo, the Democratic Republic of the",
+        code: "CD"
+    }, {
+        id: 52,
+        name: "Cook Islands",
+        code: "CK"
+    }, {
+        id: 53,
+        name: "Costa Rica",
+        code: "CR"
+    }, {
+        id: 54,
+        name: "Cote d’Ivoire",
+        code: "CI"
+    }, {
+        id: 55,
+        name: "Croatia",
+        code: "HR"
+    }, {
+        id: 56,
+        name: "Cuba",
+        code: "CU"
+    }, {
+        id: 57,
+        name: "Cyprus",
+        code: "CY"
+    }, {
+        id: 58,
+        name: "Czech Republic",
+        code: "CZ"
+    }, {
+        id: 59,
+        name: "Denmark",
+        code: "DK"
+    }, {
+        id: 60,
+        name: "Djibouti",
+        code: "DJ"
+    }, {
+        id: 61,
+        name: "Dominica",
+        code: "DM"
+    }, {
+        id: 62,
+        name: "Dominican Republic",
+        code: "DO"
+    }, {
+        id: 63,
+        name: "Ecuador",
+        code: "EC"
+    }, {
+        id: 64,
+        name: "Egypt",
+        code: "EG"
+    }, {
+        id: 65,
+        name: "El Salvador",
+        code: "SV"
+    }, {
+        id: 66,
+        name: "Equatorial Guinea",
+        code: "GQ"
+    }, {
+        id: 67,
+        name: "Eritrea",
+        code: "ER"
+    }, {
+        id: 68,
+        name: "Estonia",
+        code: "EE"
+    }, {
+        id: 69,
+        name: "Ethiopia",
+        code: "ET"
+    }, {
+        id: 70,
+        name: "Falkland Islands (Malvinas)",
+        code: "FK"
+    }, {
+        id: 71,
+        name: "Faroe Islands",
+        code: "FO"
+    }, {
+        id: 72,
+        name: "Fiji",
+        code: "FJ"
+    }, {
+        id: 73,
+        name: "Finland",
+        code: "FI"
+    }, {
+        id: 74,
+        name: "France",
+        code: "FR"
+    }, {
+        id: 75,
+        name: "French Guiana",
+        code: "GF"
+    }, {
+        id: 76,
+        name: "French Polynesia",
+        code: "PF"
+    }, {
+        id: 77,
+        name: "French Southern Territories",
+        code: "TF"
+    }, {
+        id: 78,
+        name: "Gabon",
+        code: "GA"
+    }, {
+        id: 79,
+        name: "Gambia",
+        code: "GM"
+    }, {
+        id: 80,
+        name: "Georgia",
+        code: "GE"
+    }, {
+        id: 81,
+        name: "Germany",
+        code: "DE"
+    }, {
+        id: 82,
+        name: "Ghana",
+        code: "GH"
+    }, {
+        id: 83,
+        name: "Gibraltar",
+        code: "GI"
+    }, {
+        id: 84,
+        name: "Greece",
+        code: "GR"
+    }, {
+        id: 85,
+        name: "Greenland",
+        code: "GL"
+    }, {
+        id: 86,
+        name: "Grenada",
+        code: "GD"
+    }, {
+        id: 87,
+        name: "Guadeloupe",
+        code: "GP"
+    }, {
+        id: 88,
+        name: "Guam",
+        code: "GU"
+    }, {
+        id: 89,
+        name: "Guatemala",
+        code: "GT"
+    }, {
+        id: 90,
+        name: "Guernsey",
+        code: "GG"
+    }, {
+        id: 91,
+        name: "Guinea",
+        code: "GN"
+    }, {
+        id: 92,
+        name: "Guinea-Bissau",
+        code: "GW"
+    }, {
+        id: 93,
+        name: "Guyana",
+        code: "GY"
+    }, {
+        id: 94,
+        name: "Haiti",
+        code: "HT"
+    }, {
+        id: 95,
+        name: "Heard Island and McDonald Islands",
+        code: "HM"
+    }, {
+        id: 96,
+        name: "Holy See (Vatican City State)",
+        code: "VA"
+    }, {
+        id: 97,
+        name: "Honduras",
+        code: "HN"
+    }, {
+        id: 98,
+        name: "Hong Kong",
+        code: "HK"
+    }, {
+        id: 99,
+        name: "Hungary",
+        code: "HU"
+    }, {
+        id: 100,
+        name: "Iceland",
+        code: "IS"
+    }, {
+        id: 101,
+        name: "India",
+        code: "IN"
+    }, {
+        id: 102,
+        name: "Indonesia",
+        code: "ID"
+    }, {
+        id: 103,
+        name: "Iran, Islamic Republic of",
+        code: "IR"
+    }, {
+        id: 104,
+        name: "Iraq",
+        code: "IQ"
+    }, {
+        id: 105,
+        name: "Ireland",
+        code: "IE"
+    }, {
+        id: 106,
+        name: "Isle of Man",
+        code: "IM"
+    }, {
+        id: 107,
+        name: "Israel",
+        code: "IL"
+    }, {
+        id: 108,
+        name: "Italy",
+        code: "IT"
+    }, {
+        id: 109,
+        name: "Jamaica",
+        code: "JM"
+    }, {
+        id: 110,
+        name: "Japan",
+        code: "JP"
+    }, {
+        id: 111,
+        name: "Jersey",
+        code: "JE"
+    }, {
+        id: 112,
+        name: "Jordan",
+        code: "JO"
+    }, {
+        id: 113,
+        name: "Kazakhstan",
+        code: "KZ"
+    }, {
+        id: 114,
+        name: "Kenya",
+        code: "KE"
+    }, {
+        id: 115,
+        name: "Kosovo",
+        code: "QZ"
+    }, {
+        id: 116,
+        name: "Kiribati",
+        code: "KI"
+    }, {
+        id: 117,
+        name: "Korea, Democratic People’s Republic of",
+        code: "KP"
+    }, {
+        id: 118,
+        name: "Korea, Republic of",
+        code: "KR"
+    }, {
+        id: 119,
+        name: "Kuwait",
+        code: "KW"
+    }, {
+        id: 120,
+        name: "Kyrgyzstan",
+        code: "KG"
+    }, {
+        id: 121,
+        name: "Lao People’s Democratic Republic",
+        code: "LA"
+    }, {
+        id: 122,
+        name: "Latvia",
+        code: "LV"
+    }, {
+        id: 123,
+        name: "Lebanon",
+        code: "LB"
+    }, {
+        id: 124,
+        name: "Lesotho",
+        code: "LS"
+    }, {
+        id: 125,
+        name: "Liberia",
+        code: "LR"
+    }, {
+        id: 126,
+        name: "Libya",
+        code: "LY"
+    }, {
+        id: 127,
+        name: "Liechtenstein",
+        code: "LI"
+    }, {
+        id: 128,
+        name: "Lithuania",
+        code: "LT"
+    }, {
+        id: 129,
+        name: "Luxembourg",
+        code: "LU"
+    }, {
+        id: 130,
+        name: "Macao",
+        code: "MO"
+    }, {
+        id: 131,
+        name: "Macedonia, the former Yugoslav Republic of",
+        code: "MK"
+    }, {
+        id: 132,
+        name: "Madagascar",
+        code: "MG"
+    }, {
+        id: 133,
+        name: "Malawi",
+        code: "MW"
+    }, {
+        id: 134,
+        name: "Malaysia",
+        code: "MY"
+    }, {
+        id: 135,
+        name: "Maldives",
+        code: "MV"
+    }, {
+        id: 136,
+        name: "Mali",
+        code: "ML"
+    }, {
+        id: 137,
+        name: "Malta",
+        code: "MT"
+    }, {
+        id: 138,
+        name: "Marshall Islands",
+        code: "MH"
+    }, {
+        id: 139,
+        name: "Martinique",
+        code: "MQ"
+    }, {
+        id: 140,
+        name: "Mauritania",
+        code: "MR"
+    }, {
+        id: 141,
+        name: "Mauritius",
+        code: "MU"
+    }, {
+        id: 142,
+        name: "Mayotte",
+        code: "YT"
+    }, {
+        id: 143,
+        name: "Mexico",
+        code: "MX"
+    }, {
+        id: 144,
+        name: "Micronesia, Federated States of",
+        code: "FM"
+    }, {
+        id: 145,
+        name: "Moldova, Republic of",
+        code: "MD"
+    }, {
+        id: 146,
+        name: "Monaco",
+        code: "MC"
+    }, {
+        id: 147,
+        name: "Mongolia",
+        code: "MN"
+    }, {
+        id: 148,
+        name: "Montenegro",
+        code: "ME"
+    }, {
+        id: 149,
+        name: "Montserrat",
+        code: "MS"
+    }, {
+        id: 150,
+        name: "Morocco",
+        code: "MA"
+    }, {
+        id: 151,
+        name: "Mozambique",
+        code: "MZ"
+    }, {
+        id: 152,
+        name: "Myanmar",
+        code: "MM"
+    }, {
+        id: 153,
+        name: "Namibia",
+        code: "NA"
+    }, {
+        id: 154,
+        name: "Nauru",
+        code: "NR"
+    }, {
+        id: 155,
+        name: "Nepal",
+        code: "NP"
+    }, {
+        id: 156,
+        name: "Netherlands",
+        code: "NL"
+    }, {
+        id: 157,
+        name: "Netherlands Antilles",
+        code: "AN"
+    }, {
+        id: 158,
+        name: "New Caledonia",
+        code: "NC"
+    }, {
+        id: 159,
+        name: "New Zealand",
+        code: "NZ"
+    }, {
+        id: 160,
+        name: "Nicaragua",
+        code: "NI"
+    }, {
+        id: 161,
+        name: "Niger",
+        code: "NE"
+    }, {
+        id: 162,
+        name: "Nigeria",
+        code: "NG"
+    }, {
+        id: 163,
+        name: "Niue",
+        code: "NU"
+    }, {
+        id: 164,
+        name: "Norfolk Island",
+        code: "NF"
+    }, {
+        id: 165,
+        name: "Northern Mariana Islands",
+        code: "MP"
+    }, {
+        id: 166,
+        name: "Norway",
+        code: "NO"
+    }, {
+        id: 167,
+        name: "Oman",
+        code: "OM"
+    }, {
+        id: 168,
+        name: "Pakistan",
+        code: "PK"
+    }, {
+        id: 169,
+        name: "Palau",
+        code: "PW"
+    }, {
+        id: 170,
+        name: "Palestine, State of",
+        code: "PS"
+    }, {
+        id: 171,
+        name: "Panama",
+        code: "PA"
+    }, {
+        id: 172,
+        name: "Papua New Guinea",
+        code: "PG"
+    }, {
+        id: 173,
+        name: "Paraguay",
+        code: "PY"
+    }, {
+        id: 174,
+        name: "Peru",
+        code: "PE"
+    }, {
+        id: 175,
+        name: "Philippines",
+        code: "PH"
+    }, {
+        id: 176,
+        name: "Pitcairn",
+        code: "PN"
+    }, {
+        id: 177,
+        name: "Poland",
+        code: "PL"
+    }, {
+        id: 178,
+        name: "Portugal",
+        code: "PT"
+    }, {
+        id: 179,
+        name: "Puerto Rico",
+        code: "PR"
+    }, {
+        id: 180,
+        name: "Qatar",
+        code: "QA"
+    }, {
+        id: 181,
+        name: "Reunion",
+        code: "RE"
+    }, {
+        id: 182,
+        name: "Romania",
+        code: "RO"
+    }, {
+        id: 183,
+        name: "Russian Federation",
+        code: "RU"
+    }, {
+        id: 184,
+        name: "Rwanda",
+        code: "RW"
+    }, {
+        id: 185,
+        name: "Saint Barthelemy",
+        code: "BL"
+    }, {
+        id: 186,
+        name: "Saint Helena, Ascension and Tristan da Cunha",
+        code: "SH"
+    }, {
+        id: 187,
+        name: "Saint Kitts and Nevis",
+        code: "KN"
+    }, {
+        id: 188,
+        name: "Saint Lucia",
+        code: "LC"
+    }, {
+        id: 189,
+        name: "Saint Martin (French part)",
+        code: "MF"
+    }, {
+        id: 190,
+        name: "Saint Pierre and Miquelon",
+        code: "PM"
+    }, {
+        id: 191,
+        name: "Saint Vincent and the Grenadines",
+        code: "VC"
+    }, {
+        id: 192,
+        name: "Samoa",
+        code: "WS"
+    }, {
+        id: 193,
+        name: "San Marino",
+        code: "SM"
+    }, {
+        id: 194,
+        name: "Sao Tome and Principe",
+        code: "ST"
+    }, {
+        id: 195,
+        name: "Saudi Arabia",
+        code: "SA"
+    }, {
+        id: 196,
+        name: "Senegal",
+        code: "SN"
+    }, {
+        id: 197,
+        name: "Serbia",
+        code: "RS"
+    }, {
+        id: 198,
+        name: "Seychelles",
+        code: "SC"
+    }, {
+        id: 199,
+        name: "Sierra Leone",
+        code: "SL"
+    }, {
+        id: 200,
+        name: "Singapore",
+        code: "SG"
+    }, {
+        id: 201,
+        name: "Slovakia",
+        code: "SK"
+    }, {
+        id: 202,
+        name: "Slovenia",
+        code: "SI"
+    }, {
+        id: 203,
+        name: "Solomon Islands",
+        code: "SB"
+    }, {
+        id: 204,
+        name: "Somalia",
+        code: "SO"
+    }, {
+        id: 205,
+        name: "South Africa",
+        code: "ZA"
+    }, {
+        id: 206,
+        name: "South Georgia and the South Sandwich Islands",
+        code: "GS"
+    }, {
+        id: 207,
+        name: "Spain",
+        code: "ES"
+    }, {
+        id: 208,
+        name: "Sri Lanka",
+        code: "LK"
+    }, {
+        id: 209,
+        name: "Sudan",
+        code: "SD"
+    }, {
+        id: 210,
+        name: "Suriname",
+        code: "SR"
+    }, {
+        id: 211,
+        name: "Svalbard and Jan Mayen",
+        code: "SJ"
+    }, {
+        id: 212,
+        name: "Swaziland",
+        code: "SZ"
+    }, {
+        id: 213,
+        name: "Sweden",
+        code: "SE"
+    }, {
+        id: 214,
+        name: "Switzerland",
+        code: "CH"
+    }, {
+        id: 215,
+        name: "Syrian Arab Republic",
+        code: "SY"
+    }, {
+        id: 216,
+        name: "Taiwan, Province of China",
+        code: "TW"
+    }, {
+        id: 217,
+        name: "Tajikistan",
+        code: "TJ"
+    }, {
+        id: 218,
+        name: "Tanzania, United Republic of",
+        code: "TZ"
+    }, {
+        id: 219,
+        name: "Thailand",
+        code: "TH"
+    }, {
+        id: 220,
+        name: "Timor-Leste",
+        code: "TL"
+    }, {
+        id: 221,
+        name: "Togo",
+        code: "TG"
+    }, {
+        id: 222,
+        name: "Tokelau",
+        code: "TK"
+    }, {
+        id: 223,
+        name: "Tonga",
+        code: "TO"
+    }, {
+        id: 224,
+        name: "Trinidad and Tobago",
+        code: "TT"
+    }, {
+        id: 225,
+        name: "Tunisia",
+        code: "TN"
+    }, {
+        id: 226,
+        name: "Turkey",
+        code: "TR"
+    }, {
+        id: 227,
+        name: "Turkmenistan",
+        code: "TM"
+    }, {
+        id: 228,
+        name: "Turks and Caicos Islands",
+        code: "TC"
+    }, {
+        id: 229,
+        name: "Tuvalu",
+        code: "TV"
+    }, {
+        id: 230,
+        name: "Uganda",
+        code: "UG"
+    }, {
+        id: 231,
+        name: "Ukraine",
+        code: "UA"
+    }, {
+        id: 232,
+        name: "United Arab Emirates",
+        code: "AE"
+    }, {
+        id: 233,
+        name: "United Kingdom",
+        code: "GB"
+    }, {
+        id: 234,
+        name: "United States",
+        code: "US"
+    }, {
+        id: 235,
+        name: "United States Minor Outlying Islands",
+        code: "UM"
+    }, {
+        id: 236,
+        name: "Uruguay",
+        code: "UY"
+    }, {
+        id: 237,
+        name: "Uzbekistan",
+        code: "UZ"
+    }, {
+        id: 238,
+        name: "Vanuatu",
+        code: "VU"
+    }, {
+        id: 239,
+        name: "Venezuela, Bolivarian Republic of",
+        code: "VE"
+    }, {
+        id: 240,
+        name: "Viet Nam",
+        code: "VN"
+    }, {
+        id: 241,
+        name: "Virgin Islands, British",
+        code: "VG"
+    }, {
+        id: 242,
+        name: "Virgin Islands, U.S.",
+        code: "VI"
+    }, {
+        id: 243,
+        name: "Wallis and Futuna",
+        code: "WF"
+    }, {
+        id: 244,
+        name: "Western Sahara",
+        code: "EH"
+    }, {
+        id: 245,
+        name: "Yemen",
+        code: "YE"
+    }, {
+        id: 246,
+        name: "Zambia",
+        code: "ZM"
+    }, {
+        id: 247,
+        name: "Zimbabwe",
+        code: "ZW"
+    }, {
+        id: 248,
+        name: "Europe",
+        code: "EU"
+    }, {
+        id: 249,
+        name: "Asia/Pacific Region",
+        code: "AP"
+    }, {
+        id: 250,
+        name: "Satellite Provider",
+        code: "A2"
+    }, {
+        id: 251,
+        name: "Anonymous Proxy",
+        code: "A1"
+    }, {
+        id: 252,
+        name: "Sint Maarten (Dutch part)",
+        code: "SX"
+    }, {
+        id: 253,
+        name: "Curaçao",
+        code: "CW"
+    }, {
+        id: 254,
+        name: "Bonaire, Sint Eustatius and Saba",
+        code: "BQ"
+    }, {
+        id: 255,
+        name: "South Sudan",
+        code: "SS"
+    }];
+    e.exports = {
+        countries: a,
+        countryOptions: (t = '<option value=""></option>',
+        a.forEach((function(e) {
+            t += '<option value="' + e.code + '">' + e.name + "</option>"
+        }
+        )),
+        t),
+        isValidCountry: function(e) {
+            return e && a.some((function(n) {
+                return n.code === e
+            }
+            ))
+        },
+        getIndex: function(e) {
+            return e && a.findIndex((function(n) {
+                return n.code === e
+            }
+            )) + 1
+        }
+    }
+}
+, function(e, n) {
+    var t = "0.00";
+    e.exports = {
+        checkLength: function(e) {
+            var n = document.getElementById("orderAmount").value;
+            if (document.getElementById("orderAmount").value.length <= e) {
+                if (-1 != n.indexOf(",")) {
+                    if (n.split(",")[1].length <= 2)
+                        return !0;
+                    o = (o = document.getElementById("orderAmount").value).substring(0, o.indexOf(",") + 3),
+                    document.getElementById("orderAmount").value = o
+                }
+                if (-1 != (n = document.getElementById("orderAmount").value).indexOf(".")) {
+                    for (var t = n.split(".").length - 1, a = 0; a < t - 1; a++) {
+                        o = (o = document.getElementById("orderAmount").value).replace(/\./, ""),
+                        document.getElementById("orderAmount").value = o
+                    }
+                    var o;
+                    if (n.split(".")[1].length <= 2)
+                        return !0;
+                    o = (o = document.getElementById("orderAmount").value).substring(0, o.indexOf(".") + 3),
+                    document.getElementById("orderAmount").value = o
+                }
+                return !0
+            }
+            -1 != n.indexOf(",") && (n.split(",")[1].length <= 2 || (o = (o = document.getElementById("orderAmount").value).substring(0, o.indexOf(",") + 3),
+            document.getElementById("orderAmount").value = o)),
+            -1 != n.indexOf(".") && (n.split(".")[1].length <= 2 || (o = (o = document.getElementById("orderAmount").value).substring(0, o.indexOf(".") + 3),
+            document.getElementById("orderAmount").value = o)),
+            document.getElementById("orderAmount").value.length > e && function() {
+                var e = document.getElementById("orderAmount").value;
+                e = e.substring(0, e.length - 1),
+                document.getElementById("orderAmount").value = e
+            }()
+        },
+        checkValid: function() {
+            ("¥" === PayApiForm.getCurrency() ? /^\d+$/ : /^\d+(\.)?(\.\d{1,2})?$/).test(document.getElementById("orderAmount").value) || "" === document.getElementById("orderAmount").value ? t = document.getElementById("orderAmount").value : document.getElementById("orderAmount").value = t
+        }
+    }
+}
+, function(e, n) {
+    var t = "0.00";
+    e.exports = {
+        checkLength: function(e) {
+            var n = document.getElementById("swiftpay-amount").value;
+            if (document.getElementById("swiftpay-amount").value.length <= e) {
+                if (-1 != n.indexOf(",")) {
+                    if (n.split(",")[1].length <= 2)
+                        return !0;
+                    o = (o = document.getElementById("swiftpay-amount").value).substring(0, o.indexOf(",") + 3),
+                    document.getElementById("swiftpay-amount").value = o
+                }
+                if (-1 != (n = document.getElementById("swiftpay-amount").value).indexOf(".")) {
+                    for (var t = n.split(".").length - 1, a = 0; a < t - 1; a++) {
+                        o = (o = document.getElementById("swiftpay-amount").value).replace(/\./, ""),
+                        document.getElementById("swiftpay-amount").value = o
+                    }
+                    var o;
+                    if (n.split(".")[1].length <= 2)
+                        return !0;
+                    o = (o = document.getElementById("swiftpay-amount").value).substring(0, o.indexOf(".") + 3),
+                    document.getElementById("swiftpay-amount").value = o
+                }
+                return !0
+            }
+            -1 != n.indexOf(",") && (n.split(",")[1].length <= 2 || (o = (o = document.getElementById("swiftpay-amount").value).substring(0, o.indexOf(",") + 3),
+            document.getElementById("swiftpay-amount").value = o)),
+            -1 != n.indexOf(".") && (n.split(".")[1].length <= 2 || (o = (o = document.getElementById("swiftpay-amount").value).substring(0, o.indexOf(".") + 3),
+            document.getElementById("swiftpay-amount").value = o)),
+            document.getElementById("swiftpay-amount").value.length > e && function() {
+                var e = document.getElementById("swiftpay-amount").value;
+                e = e.substring(0, e.length - 1),
+                document.getElementById("swiftpay-amount").value = e
+            }()
+        },
+        checkValid: function() {
+            ("¥" === PayApiForm.getCurrency() ? /^\d+$/ : /^\d+(\.)?(\.\d{1,2})?$/).test(document.getElementById("swiftpay-amount").value) || "" === document.getElementById("swiftpay-amount").value ? t = document.getElementById("swiftpay-amount").value : document.getElementById("swiftpay-amount").value = t
+        }
+    }
+}
+, , , function(e, n, t) {
+    "use strict";
+    t.r(n);
+    var a, o, d = t(1), i = t.n(d), r = t(0), c = t.n(r), l = t(2), u = t.n(l), m = t(3), s = t.n(m), y = function() {
+        for (var e = {}, n = window.location.search.substring(1).split("&"), t = 0; t < n.length; t++) {
+            var a = n[t].split("=");
+            if (void 0 === e[a[0]])
+                e[a[0]] = decodeURIComponent(a[1]);
+            else if ("string" == typeof e[a[0]]) {
+                var o = [e[a[0]], decodeURIComponent(a[1])];
+                e[a[0]] = o
+            } else
+                e[a[0]].push(decodeURIComponent(a[1]))
+        }
+        return e
+    }(), p = ["AUT", "BEL", "BGR", "HRV", "CYP", "CZE", "DNK", "EST", "FIN", "FRA", "DEU", "GRC", "HUN", "IRL", "ITA", "LVA", "LTU", "LUX", "MLT", "NLD", "POL", "PRT", "ROU", "SVK", "SVN", "ESP", "SWE", "GBR"], g = (["BHS", "BWA", "PRK", "ETH", "GHA", "IRN", "PAK", "LKA", "SYR", "TTO", "TUN", "YEM", "KHM", "PAN", "ASM", "GUM", "WSM", "VIR", "AFG", "BIH", "GUY", "IRQ", "LAO", "UGA", "VUT", "PAK", "KWT", "LBN", "LBY", "NGA", "OMN", "PSE", "SSD", "SDN", "ZWE", "CAF", "COD", "BDI", "SRB", "ISL", "LIE", "NOR", "CHE", "USA", "CAN", "JPN", "AUS", "NZL", "TUR", "ISR", "IDN"].concat(p),
+    a = {},
+    o = "",
+    {
+        getLabel: function(e) {
+            var n = {
+                chooseBank: "Choose your Bank",
+                orderAmount: "Enter amount",
+                continue: "Continue",
+                deposit: "Deposit",
+                customerEmail: "Customer email",
+                paymentSelect: "Please confirm your payment method from the list below.",
+                select: "Select",
+                lcpagAccountId: "LCPag account ID",
+                authCode: "Auth Code",
+                bankCard: "Bank or Credit Card",
+                bankCardDebit: "Bank or Debit Card",
+                bitwallet: "BITWALLET",
+                payToday: "Pay-Today",
+                chinaTransfer: "China Union Pay",
+                cardNumber: "Card number",
+                validCardNumber: "Valid Card Number",
+                cardHolderName: "Card Holder name",
+                validateHolderName: "Cardholder name must match Trading Account Name",
+                expDate: "Expiration date",
+                code: "CVV Code",
+                Address1: "Address",
+                Phone: "Phone",
+                City: "City",
+                Zipcode: "Zip code",
+                Country: "Country",
+                State: "State",
+                Email: "Email",
+                addressRequired: "Address is required",
+                phoneRequired: "Phone is required",
+                cityRequired: "City is required",
+                zipcodeRequired: "Zip code is required",
+                countryRequired: "Country is required",
+                stateRequired: "State is required",
+                emailRequired: "Email is required",
+                emailNotValid: "Email is not valid",
+                fundNow: "Fund Now",
+                cardWarn: "The data of your credit card is used only at the time of the transaction and are transmitted over a secure protocol to the acquiring bank in encrypted form. Details of your card are not stored in the system and, accordingly, can not be transferred to third parties.",
+                amountError: "Wrong amount ",
+                maxAmountError: "Please note, the maximum deposit is ¥800,000.00",
+                minAmountError: "Please note, the minimum deposit is ",
+                cardError: "Wrong card number ",
+                cardholderError: "Wrong cardholder name",
+                expDateError: "Wrong expiry date",
+                cvvError: "Wrong CVV",
+                toBePaid: "to be paid",
+                RMBsum: "RMB to be paid",
+                THBsum: "THB to be paid",
+                VNDsum: "VND to be paid",
+                MYRsum: "MYR to be paid",
+                IDRsum: "IDR to be paid",
+                BNDsum: "BND to be paid",
+                USDTsum: "USDT to be paid",
+                CNYsum: "CNY to be paid",
+                accWarn: "No account info",
+                bank_1: "Industry and Commercial Bank of China",
+                bank_2: "China Merchants Bank",
+                bank_3: "China Construction Bank",
+                bank_4: "Agricultural Bank Of China",
+                bank_5: "Bank of China",
+                bank_6: "Postal Savings Bank of China",
+                bank_7: "Shanghai Pudong Development Bank",
+                bank_8: "Guangdong Development Bank",
+                bank_9: "China Everbright Bank",
+                bank_10: "China Minsheng Bank",
+                bank_11: "China Citic Bank Cooperation Limited",
+                bank_12: "Industrial Bank",
+                bank_13: "Ping An Bank",
+                bank_14: "Bank of Communications",
+                bank_15: "Beijing Bank",
+                bank_16: "Huaxia Bank",
+                bank_17: "Bank of Tianjin",
+                bank_18: "Bank of Shanghai",
+                bank_19: "Bank of Nangbo",
+                bank_20: "Bank of Nanjing",
+                bank_warning: "Kindly be aware that transfers can take around 2 weeks from this bank",
+                creditCardWarn: "Credit cards are charged a 1.75% transaction fee",
+                creditCardDebited: "Amount Debited:",
+                skrillWarn: "Skrill payments are charged a 2.5% transaction fee",
+                netellerWarn: "Neteller payments are charged a 3% transaction fee",
+                depositLimitFirst: "Deposit amount should not be less than",
+                depositLimitSecond: "and more than",
+                payPlusDescription: "The converted amount is only for reference",
+                depositLimitReached: "You are not able to deposit as you have reached the deposit limit.",
+                depositLimit50: "Please enter a valid amount (from 50 to",
+                $: "$",
+                "£": "£",
+                "€": "€",
+                "¥": "¥",
+                BBL: "Bangkok Bank",
+                KBANK: "Kasikorn Bank",
+                SCB: "Siam Commercial Bank",
+                KTB: "Krung Thai Bank",
+                BAY: "Bank of Ayutthaya",
+                LIMIT: "Deposit limit: min",
+                MAX: "max"
+            };
+            return a && a[e] ? a[e] : n[e]
+        },
+        isChina: function() {
+            return "zh" === o
+        },
+        loadTranslations: function(e, n) {
+            if (!e) {
+                var t = navigator.language;
+                e = !t || "zh-TW" !== t && "zh-SG" !== t && "zh-HK" !== t && "zh-CN" !== t ? "ms" === t ? "ms" : t && ("pl-PL" === t || "pl" === t) && polandLabels[labelName] ? "pl" : "en" : "zh"
+            }
+            o = e;
+            var d = RegExp(/staging/).test(window.location.host) ? "https://uat.ixpay.tech/payment-form" : "https://options.ixpay.tech/payment-form";
+            if (window.XDomainRequest) {
+                var i = new XDomainRequest;
+                i.open("get", "".concat(d, "/v2/resources/i18n/") + e.toLowerCase() + ".json"),
+                i.onload = function() {
+                    console.log("OK"),
+                    a = JSON.parse(i.responseText),
+                    n()
+                }
+                ,
+                i.onerror = function() {
+                    console.log("ERROR"),
+                    n()
+                }
+                ,
+                setTimeout((function() {
+                    i.send()
+                }
+                ), 0)
+            } else {
+                var r = new XMLHttpRequest;
+                r.onreadystatechange = function() {
+                    4 === r.readyState && (200 === r.status ? (a = JSON.parse(r.responseText),
+                    n()) : n())
+                }
+                ,
+                r.open("GET", "".concat(d, "/v2/resources/i18n/") + e.toLowerCase() + ".json", !0),
+                r.send()
+            }
+        },
+        getLocale: function(e) {
+            var n = {}
+              , t = e || navigator.language;
+            return n.bg = ["BG"],
+            n.cs = ["CS"],
+            n.ms = ["MS"],
+            n.in = ["IN"],
+            n.ar = ["AR"],
+            n.pt = ["PT"],
+            n.th = ["TH"],
+            n.mn = ["MN"],
+            n.ko = ["KO"],
+            n.ja = ["JA"],
+            n.da = ["DA", "da_DK"],
+            n.de = ["DE", "de_DE"],
+            n.nl = ["DE", "de_DE"],
+            n["nl-be"] = ["DE", "de_DE"],
+            n.el = ["EL", "el_GR"],
+            n.es = ["ES", "es_ES"],
+            n["es-ar"] = ["ES", "es_ES"],
+            n["es-gt"] = ["ES", "es_ES"],
+            n["es-cr"] = ["ES", "es_ES"],
+            n["es-pa"] = ["ES", "es_ES"],
+            n["es-do"] = ["ES", "es_ES"],
+            n["es-mx"] = ["ES", "es_ES"],
+            n["es-ve"] = ["ES", "es_ES"],
+            n["es-co"] = ["ES", "es_ES"],
+            n["es-pe"] = ["ES", "es_ES"],
+            n["es-ec"] = ["ES", "es_ES"],
+            n["es-cl"] = ["ES", "es_ES"],
+            n["es-uy"] = ["ES", "es_ES"],
+            n["es-py"] = ["ES", "es_ES"],
+            n["es-bo"] = ["ES", "es_ES"],
+            n["es-sv"] = ["ES", "es_ES"],
+            n["es-hn"] = ["ES", "es_ES"],
+            n["es-ni"] = ["ES", "es_ES"],
+            n["es-pr"] = ["ES", "es_ES"],
+            n.fi = ["FI"],
+            n.fr = ["FR", "fr_FR"],
+            n["fr-be"] = ["FR", "fr_FR"],
+            n["fr-ca"] = ["FR", "fr_FR"],
+            n["fr-ch"] = ["FR", "fr_FR"],
+            n["fr-lu"] = ["FR", "fr_FR"],
+            n["it-ch"] = ["IT", "fr_FR"],
+            n.it = ["IT", "it_IT"],
+            n.it = ["IT", "it_IT"],
+            n.zh_tw = ["ZH"],
+            n.zh_cn = ["ZH"],
+            n["zh-hk"] = ["ZH"],
+            n["zh-sg"] = ["ZH"],
+            n.zh = ["ZH"],
+            n.cnt = ["ZH"],
+            n.cns = ["ZH"],
+            n.cn = ["ZH"],
+            n.nl = ["NL"],
+            n.pl = ["PL", "pl_PL"],
+            n.ro = ["RO"],
+            n["ro-mo"] = ["RO"],
+            n.ru = ["RU", "ru_RU"],
+            n["ru-mo"] = ["RU", "ru_RU"],
+            n.sv = ["SV"],
+            n["sv-fi"] = ["SV"],
+            n.tr = ["TR"],
+            n.ja = ["JA", "ja_JP"],
+            n[t] ? n[t] : ["EN", "en_US"]
+        }
+    }), v = function() {
+        document.getElementById("loadSpinner").style.display = "block",
+        document.getElementById("paymentFormContainer").style.display = "none",
+        document.getElementById("depositFormContainer").style.padding = "0"
+    }, I = function() {
+        document.getElementById("loadSpinner").style.display = "none",
+        document.getElementById("paymentFormContainer").style.display = "block",
+        document.getElementById("depositFormContainer").style.padding = "35px 0px"
+    };
+    t.d(n, "PayApiForm", (function() {
+        return b
+    }
+    )),
+    window.inputsPlugin = u.a,
+    window.swiftValidation = s.a;
+    var B, b = function() {
+        var e = ""
+          , n = y.isTestMode ? "https://127.0.0.1:82" : "https://options.ixpay.tech/payment-form/"
+          , t = 0
+          , a = 0
+          , o = ""
+          , d = 0
+          , r = ""
+          , l = 0
+          , u = 0
+          , m = 0
+          , s = 0
+          , B = []
+          , b = ""
+          , E = function(e) {
+            return "Alipay" === e ? "ALIPAY" : "USDT-ERC20" === e ? "USDT-erc20" : "USDT-OMNI" === e ? "USDT-omni" : "USDT-TRC20" === e ? "USDT-trc20" : "USDT-ETH" === e ? "USDT-eth" : "UnionPay Transfer" === e ? "EBANK" : "TAIPAY" === e ? "THB" : "Croin Plus" === e ? "Croin Plus" : void 0
+        }
+          , f = function(e, n) {
+            var o = a
+              , i = "RMB";
+            "ALIPAY" === E(G.cpsMethod) || "EBANK" === E(G.cpsMethod) ? (o = s,
+            i = "CNY") : "THB" === E(G.cpsMethod) ? (o = d,
+            i = "THB") : "USDT-erc20" === E(G.cpsMethod) || "USDT-omni" === E(G.cpsMethod) || "USDT-trc20" === E(G.cpsMethod) || "USDT-eth" === E(G.cpsMethod) ? (o = l,
+            i = "USDT") : "Croin Plus" === E(G.cpsMethod) ? "MYS" === r ? i = "MYR" : "IDN" === r ? i = "IDR" : "VNM" === r ? i = "VND" : "BRN" === r ? i = "BND" : "LAO" === r && (i = "LAK") : n && (o = 0,
+            i = "VND");
+            var c = 0;
+            c = "none" == document.getElementById("orderAmount").style.display ? document.getElementById("swiftpay-amount").value : /^\d+(\.\d{1,2})?$/.test(document.getElementById("orderAmount").value) ? document.getElementById("orderAmount").value : 0,
+            c = new Intl.NumberFormat("en-US").format(Number(c * o).toFixed(2)),
+            t = c,
+            document.getElementById("amountExplanationLabel").textContent = i + " " + g.getLabel("toBePaid") + " " + c
+        }
+          , S = function() {
+            if ("KAIZEN_LOGIC_OPTIONS" === G.broker) {
+                var e;
+                switch (document.getElementById("currency").value) {
+                case "GBP":
+                case "EUR":
+                    e = "".concat(g.getLabel("LIMIT"), " ").concat(V(), "10, ").concat(g.getLabel("MAX"), " ").concat(V(), "2,000");
+                    break;
+                default:
+                    e = "".concat(g.getLabel("LIMIT"), " ").concat(V(), "10, ").concat(g.getLabel("MAX"), " ").concat(V(), "2,500")
+                }
+                document.getElementById("orderAmountLimit").textContent = e
+            }
+        }
+          , h = {
+            showInputs: function() {
+                document.getElementById("generalSubmit").style.display = "block",
+                document.getElementById("netellerLogo").style.display = "",
+                document.getElementById("netellerLogo").style.width = "82px",
+                document.getElementById("netellerLogo").style.marginTop = "2px",
+                f(),
+                S()
+            },
+            hideInputs: function() {
+                document.getElementById("generalSubmit").style.display = "none",
+                document.getElementById("netellerLogo").style.display = "none"
+            }
+        }
+          , A = {
+            showInputs: function() {
+                document.getElementById("amountExplanationLabel").style.display = "",
+                document.getElementById("orderAmountLimit").style.display = "",
+                document.getElementById("generalSubmit").style.display = "block",
+                f(),
+                S()
+            },
+            hideInputs: function() {
+                document.getElementById("amountExplanationLabel").style.display = "none",
+                document.getElementById("orderAmountLimit").style.display = "",
+                document.getElementById("generalSubmit").style.display = "none"
+            },
+            sendRequest: function() {
+                var n = e + "/payapi/v1/bfopay/payins/bfoPay"
+                  , a = new XMLHttpRequest
+                  , o = function() {
+                    var e = t
+                      , n = document.getElementById("returnUrl").value
+                      , a = document.getElementById("accountId").value
+                      , o = document.getElementById("email").value
+                      , d = document.getElementById("name").value
+                      , i = document.getElementById("broker").value
+                      , r = document.getElementById("currency").value
+                      , c = "orderAmount=" + e + "&accountId=" + a;
+                    return n && (c += "&returnUrl=" + n),
+                    o && (c += "&email=" + o),
+                    d && (c += "&name=" + d),
+                    i && (c += "&broker=" + i),
+                    c += r ? "&currency=" + r : "&currency=USD"
+                }();
+                a.open("POST", n, !0),
+                a.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"),
+                a.onreadystatechange = function() {
+                    if (4 == a.readyState) {
+                        var e = "";
+                        try {
+                            e = JSON.parse(a.responseText)
+                        } catch (e) {
+                            I()
+                        }
+                        if ("" !== e) {
+                            var n = document.getElementById("bfoForm");
+                            return n.action = e.endPoint,
+                            document.getElementById("memberID").value = e.MemberID,
+                            document.getElementById("terminalID").value = e.TerminalID,
+                            document.getElementById("interfaceVersion").value = e.interfaceVersion,
+                            document.getElementById("keyType").value = e.keyType,
+                            document.getElementById("requestType").value = e.requestType,
+                            document.getElementById("amount").value = e.amount,
+                            document.getElementById("productName").value = e.productName,
+                            document.getElementById("payID").value = e.payID,
+                            document.getElementById("tradeDate").value = e.TradeDate,
+                            document.getElementById("transID").value = e.TransID,
+                            document.getElementById("orderMoney").value = e.OrderMoney,
+                            document.getElementById("pageUrl").value = e.PageUrl,
+                            document.getElementById("bfoReturnUrl").value = e.ReturnUrl,
+                            document.getElementById("signature").value = e.signature,
+                            document.getElementById("noticeType").value = e.NoticeType,
+                            v(),
+                            void n.submit()
+                        }
+                        I()
+                    }
+                }
+                ,
+                v(),
+                a.send(o)
+            }
+        }
+          , T = {
+            showInputs: function() {
+                document.getElementById("lcpag-wrapper").style.display = "block",
+                document.getElementById("generalSubmit").style.display = "block"
+            },
+            hideInputs: function() {
+                document.getElementById("lcpag-wrapper").style.display = "none",
+                document.getElementById("generalSubmit").style.display = "none"
+            },
+            sendRequest: function() {
+                var n = new XMLHttpRequest
+                  , t = e + "/payapi/v1/lcpag/payins/deposit"
+                  , a = {
+                    auth: document.getElementById("lcpag-input-auth").value,
+                    lcPagAccountId: document.getElementById("lcpag-input-account-id").value,
+                    accountId: document.getElementById("accountId").value,
+                    currency: document.getElementById("currency").value,
+                    broker: "MT4_BHS",
+                    orderAmount: document.getElementById("orderAmount").value
+                }
+                  , o = "auth=".concat(a.auth, "&currency=").concat(a.currency, "&lcPagAccountId=").concat(a.lcPagAccountId, "&accountId=").concat(a.accountId, "&broker=").concat(a.broker, "&orderAmount=").concat(a.orderAmount);
+                n.open("POST", t, !0),
+                n.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"),
+                n.onreadystatechange = function() {
+                    if (4 == n.readyState) {
+                        try {
+                            window.location.href = n.responseText
+                        } catch (e) {
+                            I()
+                        }
+                        I()
+                    }
+                }
+                ,
+                v(),
+                n.send(o)
+            }
+        }
+          , C = {
+            showInputs: function() {
+                document.getElementById("customer-email").style.display = "block",
+                document.getElementById("generalSubmit").style.display = "block"
+            },
+            hideInputs: function() {
+                document.getElementById("customer-email").style.display = "none",
+                document.getElementById("generalSubmit").style.display = "none"
+            },
+            validate: function() {
+                var e = [];
+                if (0 * document.getElementById("orderAmount").value < 107) {
+                    var n = 1 / 0;
+                    e.push("min value ".concat(n.toFixed(2)))
+                }
+                return e
+            }
+        }
+          , k = {
+            showInputs: function() {},
+            hideInputs: function() {},
+            sendRequest: function() {
+                var n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "/payapi/v1/solid-payments/payin"
+                  , t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1]
+                  , a = e + n
+                  , o = new XMLHttpRequest
+                  , d = {
+                    orderAmount: document.getElementById("orderAmount").value,
+                    returnUrl: document.getElementById("returnUrl").value,
+                    accountId: document.getElementById("accountId").value,
+                    tenantId: document.getElementById("tenantId").value,
+                    currency: document.getElementById("currency").value
+                }
+                  , i = {
+                    amount: d.orderAmount,
+                    currency: d.currency,
+                    tenantId: d.tenantId,
+                    accountNumber: d.accountId
+                };
+                function r(e) {
+                    var n = "orderAmount=" + e.orderAmount + "&tenantId=" + e.tenantId + "&accountId=" + e.accountId;
+                    return e.currency ? n += "&currency=" + e.currency : n += "&currency=USD",
+                    n
+                }
+                var c = r(d);
+                o.open("POST", a, !0),
+                t ? o.setRequestHeader("Content-Type", "application/json") : o.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"),
+                o.onreadystatechange = function() {
+                    if (4 == o.readyState) {
+                        I(),
+                        document.getElementById("solidPaymentsForm").action = G.returnUrl;
+                        var e = JSON.parse(o.response).id
+                          , n = document.createElement("script");
+                        n.src = "https://solidpayments.net/v1/paymentWidgets.js?checkoutId=".concat(e),
+                        document.head.appendChild(n),
+                        document.getElementById("paymentFormContainer").style.display = "none"
+                    }
+                }
+                ,
+                v(),
+                o.send(t ? JSON.stringify(i) : c)
+            },
+            validate: function() {
+                return !0
+            }
+        }
+          , L = {
+            showInputs: function() {
+                document.getElementById("cardRow4").style.display = "block"
+            },
+            hideInputs: function() {
+                document.getElementById("cardRow").style.display = "none",
+                document.getElementById("cardRow1").style.display = "none",
+                document.getElementById("cardRow2").style.display = "none",
+                document.getElementById("cardRow3").style.display = "none",
+                document.getElementById("cardRow4").style.display = "none",
+                document.getElementById("cardRow5").style.display = "none",
+                document.getElementById("creditCardWarn").style.display = "none"
+            },
+            sendRequest: function() {
+                var n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "/payapi/v1/nuvei/payins"
+                  , t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1]
+                  , a = e + n
+                  , o = new XMLHttpRequest
+                  , d = {
+                    orderAmount: document.getElementById("orderAmount").value,
+                    returnUrl: document.getElementById("returnUrl").value,
+                    accountId: document.getElementById("accountId").value,
+                    tenantId: document.getElementById("tenantId").value,
+                    currency: document.getElementById("currency").value
+                }
+                  , i = {
+                    amount: d.orderAmount,
+                    currency: d.currency,
+                    returnUrl: document.getElementById("returnUrl").value,
+                    tenantId: d.tenantId,
+                    accountNumber: d.accountId
+                };
+                function r(e) {
+                    var n = "orderAmount=" + e.orderAmount + "&tenantId=" + e.tenantId + "&accountId=" + e.accountId;
+                    return e.returnUrl && (n += "&returnUrl=" + e.returnUrl),
+                    e.currency ? n += "&currency=" + e.currency : n += "&currency=USD",
+                    n
+                }
+                var c = r(d);
+                o.open("POST", a, !0),
+                t ? o.setRequestHeader("Content-Type", "application/json") : o.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"),
+                o.onreadystatechange = function() {
+                    if (4 == o.readyState) {
+                        try {
+                            console.log("xhr.response", o.responseText),
+                            window.location.href = o.responseText
+                        } catch (e) {
+                            I()
+                        }
+                        I(),
+                        I()
+                    }
+                }
+                ,
+                v(),
+                o.send(t ? JSON.stringify(i) : c)
+            },
+            validate: function() {
+                return !0
+            }
+        }
+          , R = {
+            showInputs: function() {
+                document.getElementById("cardRow4").style.display = "block"
+            },
+            hideInputs: function() {
+                document.getElementById("cardRow").style.display = "none",
+                document.getElementById("cardRow1").style.display = "none",
+                document.getElementById("cardRow2").style.display = "none",
+                document.getElementById("cardRow3").style.display = "none",
+                document.getElementById("cardRow4").style.display = "none",
+                document.getElementById("cardRow5").style.display = "none",
+                document.getElementById("creditCardWarn").style.display = "none"
+            },
+            sendRequest: function() {
+                var n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "/payapi/v1/global-payments/payin"
+                  , t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1]
+                  , a = e + n
+                  , o = new XMLHttpRequest
+                  , d = {
+                    orderAmount: document.getElementById("orderAmount").value,
+                    returnUrl: document.getElementById("returnUrl").value,
+                    accountId: document.getElementById("accountId").value,
+                    tenantId: document.getElementById("tenantId").value,
+                    currency: document.getElementById("currency").value
+                }
+                  , i = {
+                    amount: d.orderAmount,
+                    currency: d.currency,
+                    returnUrl: document.getElementById("returnUrl").value,
+                    tenantId: d.tenantId,
+                    accountNumber: d.accountId
+                };
+                function r(e) {
+                    var n = "orderAmount=" + e.orderAmount + "&tenantId=" + e.tenantId + "&accountId=" + e.accountId;
+                    return e.returnUrl && (n += "&returnUrl=" + e.returnUrl),
+                    e.currency ? n += "&currency=" + e.currency : n += "&currency=USD",
+                    n
+                }
+                var c = r(d);
+                o.open("POST", a, !0),
+                t ? o.setRequestHeader("Content-Type", "application/json") : o.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"),
+                o.onreadystatechange = function() {
+                    if (4 == o.readyState) {
+                        try {
+                            window.location.href = o.responseText
+                        } catch (e) {
+                            I()
+                        }
+                        I(),
+                        I()
+                    }
+                }
+                ,
+                v(),
+                o.send(t ? JSON.stringify(i) : c)
+            },
+            validate: function() {
+                return !0
+            }
+        }
+          , w = {
+            sendRequest: function() {
+                var n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "/payapi/v1/otc/deposit"
+                  , t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1]
+                  , a = e + n
+                  , o = new XMLHttpRequest
+                  , d = {
+                    orderAmount: document.getElementById("orderAmount").value,
+                    returnUrl: document.getElementById("returnUrl").value,
+                    accountId: document.getElementById("accountId").value,
+                    currency: document.getElementById("currency").value,
+                    exchangeRate: document.getElementById("exchangeRate").value
+                }
+                  , i = {
+                    orderAmount: Number(d.orderAmount),
+                    currency: d.currency,
+                    returnUrl: d.returnUrl,
+                    accountId: Number(d.accountId),
+                    exchangeRate: Number(d.exchangeRate)
+                };
+                function r(e) {
+                    var n = "orderAmount=" + e.orderAmount + "&accountId=" + e.accountId + "&exchangeRate=" + e.exchangeRate;
+                    return e.returnUrl && (n += "&returnUrl=" + e.returnUrl),
+                    e.currency ? n += "&currency=" + e.currency : n += "&currency=USD",
+                    n
+                }
+                var c = r(d);
+                o.open("POST", a, !0),
+                t ? o.setRequestHeader("Content-Type", "application/json") : o.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"),
+                o.onreadystatechange = function() {
+                    if (4 == o.readyState) {
+                        try {
+                            window.location.href = o.responseText
+                        } catch (e) {
+                            I()
+                        }
+                        I(),
+                        I()
+                    }
+                }
+                ,
+                v(),
+                o.send(t ? JSON.stringify(i) : c)
+            },
+            validate: function() {
+                return !0
+            }
+        }
+          , M = {
+            showInputs: function() {
+                document.getElementById("cardRow4").style.display = "block",
+                document.getElementById("cardRow5").style.display = "block"
+            },
+            hideInputs: function() {
+                document.getElementById("cardRow4").style.display = "none",
+                document.getElementById("cardRow5").style.display = "none"
+            },
+            sendRequest: function() {
+                var n = e + "/payapi/v1/ecommPay/payins"
+                  , t = new XMLHttpRequest
+                  , a = {
+                    amount: document.getElementById("orderAmount").value,
+                    method: "ECOMM_PAY",
+                    returnUrl: document.getElementById("returnUrl").value,
+                    currency: document.getElementById("currency").value,
+                    broker: document.getElementById("broker").value,
+                    customer: {
+                        accountNumber: document.getElementById("accountId").value,
+                        email: document.getElementById("email").value
+                    },
+                    name: document.getElementById("name").value
+                };
+                t.open("POST", n, !0),
+                t.setRequestHeader("Content-Type", "application/json"),
+                t.onreadystatechange = function() {
+                    if (4 == t.readyState) {
+                        try {
+                            window.location.href = t.responseText
+                        } catch (e) {
+                            I()
+                        }
+                        I()
+                    }
+                }
+                ,
+                v(),
+                t.send(JSON.stringify(a))
+            },
+            validate: function() {
+                var e = [];
+                if (/^\d+(\.\d{1,2})?$/.test(document.getElementById("orderAmount").value)) {
+                    if (document.getElementById("orderAmount").value < O())
+                        e.push(g.getLabel("minAmountError") + V() + " " + O());
+                    else if (document.getElementById("orderAmount").value > 2e4)
+                        return e.push("Please note, the maximum deposit is " + V() + "20,000.00"),
+                        e
+                } else
+                    e.push(g.getLabel("amountError"));
+                return e
+            }
+        }
+          , N = {
+            showInputs: function() {
+                document.getElementById("cardRow4").style.display = "block",
+                document.getElementById("cardRow5").style.display = "block",
+                document.getElementById("world-pay-explanation").style.display = "block"
+            },
+            hideInputs: function() {
+                document.getElementById("cardRow4").style.display = "none",
+                document.getElementById("cardRow5").style.display = "none",
+                document.getElementById("world-pay-explanation").style.display = "none"
+            },
+            sendRequest: function() {
+                document.querySelector("#paymentForm").action = e + "/payapi/v1/worldpay/payins/cardTransfers",
+                v(),
+                document.querySelector("#paymentForm").submit()
+            },
+            validate: function() {
+                var e = [];
+                if (/^\d+(\.\d{1,2})?$/.test(document.getElementById("orderAmount").value)) {
+                    if (document.getElementById("orderAmount").value < O())
+                        e.push(g.getLabel("minAmountError") + V() + " " + O());
+                    else if (document.getElementById("orderAmount").value > 2e4)
+                        return e.push("Please note, the maximum deposit is " + V() + "20,000.00"),
+                        e
+                } else
+                    e.push(g.getLabel("amountError"));
+                return e
+            }
+        };
+        function U(e, n, t) {
+            var a = new XMLHttpRequest;
+            a.onreadystatechange = function() {
+                if (4 === a.readyState && 200 === a.status) {
+                    u = JSON.parse(a.response).min ? JSON.parse(a.response).min : null,
+                    (m = JSON.parse(a.response).max ? JSON.parse(a.response).max : null) ? (document.getElementById("orderAmountLimit").textContent = "".concat(g.getLabel("depositLimitFirst"), " ").concat(t, " ").concat(u, " ").concat(g.getLabel("depositLimitSecond"), " ").concat(m.toLocaleString()),
+                    document.getElementById("submitGeneral").setAttribute("disabled", "true"),
+                    document.getElementById("orderAmount").addEventListener("input", (function() {
+                        var e = parseFloat(document.getElementById("orderAmount").value);
+                        !e || e > m || e < u ? document.getElementById("submitGeneral").setAttribute("disabled", "true") : document.getElementById("submitGeneral").removeAttribute("disabled")
+                    }
+                    ))) : !m && String(e).includes("Croin Plus") ? (document.getElementById("orderAmountLimit").textContent = "".concat(g.getLabel("depositLimitFirst"), " ").concat(t, " ").concat(u),
+                    document.getElementById("orderAmountPayPlusDescription").textContent = g.getLabel("payPlusDescription"),
+                    document.getElementById("submitGeneral").setAttribute("disabled", "true"),
+                    document.getElementById("orderAmount").addEventListener("input", (function() {
+                        var e = parseFloat(document.getElementById("orderAmount").value);
+                        !e || e < u ? document.getElementById("submitGeneral").setAttribute("disabled", "true") : document.getElementById("submitGeneral").removeAttribute("disabled")
+                    }
+                    ))) : (document.getElementById("orderAmountLimit").textContent = "".concat(g.getLabel("depositLimitFirst"), " ").concat(t, " ").concat(u),
+                    document.getElementById("submitGeneral").setAttribute("disabled", "true"),
+                    document.getElementById("orderAmount").addEventListener("input", (function() {
+                        var e = parseFloat(document.getElementById("orderAmount").value);
+                        !e || e < u ? document.getElementById("submitGeneral").setAttribute("disabled", "true") : document.getElementById("submitGeneral").removeAttribute("disabled")
+                    }
+                    )));
+                    var n = document.createEvent("Event");
+                    n.initEvent("input", !0, !0),
+                    document.getElementById("orderAmount").dispatchEvent(n)
+                }
+            }
+            ,
+            a.open("GET", "".concat(G.serverAddress || "", "/payapi/v1/limit?country=").concat(n, "&currency=").concat(t, "&pspName=").concat(e, "&type=PAY_IN&broker=").concat(K()), !0),
+            a.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"),
+            a.send()
+        }
+        var x = function() {
+            var e = document.getElementById("paymentType");
+            return document.getElementById("paymentType").options[e.selectedIndex].value
+        }
+          , P = function() {
+            var e = document.getElementById("cardCountry");
+            return e && document.getElementById("cardCountry").options[e.selectedIndex].value
+        }
+          , D = function() {
+            var e = P()
+              , n = c.a.needRenderState(e);
+            if (document.getElementById("cardRowState").style.display = n ? "block" : "none",
+            n) {
+                var t = function() {
+                    var e = document.getElementById("cardState");
+                    return e && e.selectedIndex > 0 && document.getElementById("cardState").options[e.selectedIndex].value
+                }();
+                c.a.getIndex(e, t) <= 0 && (document.getElementById("cardState").innerHTML = c.a.renderStateOptions(e),
+                document.getElementById("cardState").selectedIndex = 0)
+            } else
+                document.getElementById("cardState").selectedIndex = 0
+        }
+          , _ = function() {
+            var e = function() {
+                C.hideInputs(),
+                N.hideInputs(),
+                M.hideInputs(),
+                R.hideInputs(),
+                document.getElementById("cardRow4").style.display = "none",
+                document.getElementById("cardRowEmail").style.display = "none",
+                document.getElementById("cardRowPhone").style.display = "none",
+                document.getElementById("cardRowAddress").style.display = "none",
+                document.getElementById("cardRowCity").style.display = "none",
+                document.getElementById("cardRowZipcode").style.display = "none",
+                document.getElementById("cardRowCountry").style.display = "none",
+                document.getElementById("cardRowState").style.display = "none",
+                document.getElementById("chinaInputs").style.display = "none",
+                document.getElementById("generalSubmit").style.display = "none",
+                document.getElementById("amountExplanationLabel").style.display = "none",
+                document.getElementById("bankWarning").style.display = "none",
+                document.getElementById("orderAmountLimit").style.display = "",
+                document.getElementById("generalSubmit").style.display = "none",
+                document.getElementById("skrillLogo").style.display = "none",
+                A.hideInputs(),
+                h.hideInputs(),
+                T.hideInputs()
+            };
+            q(),
+            document.getElementById("messageArea").style.display = "none",
+            document.getElementById("messageArea").innerHTML = "";
+            var n = x();
+            e(),
+            document.getElementById("orderAmountLimit").textContent = "",
+            "card" === n ? "WORLDPAY" === o ? N.showInputs() : "TRANSACT365" === o || ("ECOMM_PAY" === o ? M.showInputs() : (R.showInputs(),
+            z())) : "china" === n ? (W(),
+            function() {
+                if ("KAIZEN_LOGIC_OPTIONS" !== K() && (document.getElementById("chinaInputs").style.display = "block"),
+                document.getElementById("generalSubmit").style.display = "block",
+                document.getElementById("amountExplanationLabel").style.display = "",
+                document.getElementById("orderAmountLimit").style.display = "",
+                document.getElementById("payTodayWrapper").style.display = "none",
+                document.getElementById("nganluongWrapper").style.display = "none",
+                "KAIZEN_LOGIC_OPTIONS" !== K()) {
+                    var e = document.getElementById("chinabank");
+                    document.getElementById("currency").value;
+                    document.getElementById("chinabankWrapper").style.display = "block",
+                    E(G.cpsMethod) ? document.getElementById("chinabank").innerHTML = '<option value="CPS Alipay">ALIPAY</option>\n<option value="CPS UnionPay Transfer">EBANK</option>\n<option value="CPS TAIPAY">THB</option>\n<option value="CPS USDT-ERC20">USDT-erc20</option>\n<option value="CPS USDT-TRC20">USDT-trc20</option>\n<option value="CPS USDT-OMNI">USDT-omni</option>\n<option value="CPS USDT-ETH">USDT-eth</option>\n<option value="CPS Croin Plus">Croin Plus</option>' : (document.getElementById("chinabank").innerHTML = '<option value="CPS Alipay">ALIPAY</option>\n<option value="CPS UnionPay Transfer">E-Bank</option>',
+                    U(e.options[e.selectedIndex].value, r, document.getElementById("currency").value),
+                    e.addEventListener("change", (function() {
+                        U(e.options[e.selectedIndex].value, r, document.getElementById("currency").value)
+                    }
+                    )))
+                }
+                f(),
+                S()
+            }()) : "skrill" === n ? (document.getElementById("generalSubmit").style.display = "block",
+            document.getElementById("skrillLogo").style.display = "block",
+            J()) : "bfo" === n ? A.showInputs() : "neteller" === n ? h.showInputs() : "payToday" === n ? (document.getElementById("chinaInputs").style.display = "block",
+            document.getElementById("generalSubmit").style.display = "block",
+            document.getElementById("amountExplanationLabel").style.display = "",
+            document.getElementById("orderAmountLimit").style.display = "",
+            document.getElementById("payTodayWrapper").style.display = "",
+            document.getElementById("chinabankWrapper").style.display = "none",
+            f(),
+            S()) : "NGANLUONG" === n ? (document.getElementById("chinaInputs").style.display = "block",
+            document.getElementById("generalSubmit").style.display = "block",
+            document.getElementById("amountExplanationLabel").style.display = "",
+            document.getElementById("orderAmountLimit").style.display = "",
+            document.getElementById("nganluongWrapper").style.display = "",
+            document.getElementById("payTodayWrapper").style.display = "none",
+            document.getElementById("chinabankWrapper").style.display = "none",
+            f(0, !0),
+            S()) : "LCPAG" === n ? T.showInputs() : "bitwallet" === n ? C.showInputs() : e(),
+            function() {
+                if (E(G.cpsMethod))
+                    for (var e = document.getElementById("chinabank"), n = 0, t = e.options.length; n < t; n++)
+                        e.options[n].innerText === E(G.cpsMethod) && (e.options.selectedIndex = n,
+                        document.getElementById("chinabankWrapper").style.display = "none")
+            }()
+        }
+          , O = function() {
+            return G && "KAIZEN_LOGIC_OPTIONS" === G.broker ? 1 : (document.getElementById("currency").value,
+            1)
+        }
+          , G = void 0
+          , H = function() {
+            var e = document.getElementById("chinabank");
+            document.getElementById("inputBank").value = document.getElementById("chinabank").options[e.selectedIndex].value,
+            document.getElementById("locale").value = g.getLocale()[0],
+            y.billingServer && (document.getElementById("billingServer").value = y.billingServer),
+            y.account && (document.getElementById("accountId").value = y.account),
+            y.returnUrl && (document.getElementById("returnUrl").value = y.returnUrl),
+            y.name && (document.getElementById("name").value = y.name),
+            y.email && (document.getElementById("email").value = y.email),
+            y.broker ? document.getElementById("broker").value = y.broker : document.getElementById("broker").value = "GO_MARKETS_UK",
+            y.currency && (document.getElementById("currency").value = y.currency),
+            y.tenantId && (document.getElementById("tenantId").value = y.tenantId),
+            y.phone && (document.getElementById("phone").value = y.phone),
+            y.country && (document.getElementById("country").value = y.country),
+            y.city && (document.getElementById("city").value = y.city),
+            y.street && (document.getElementById("street").value = y.street),
+            G && (document.getElementById("accountId").value = G.accountId,
+            document.getElementById("returnUrl").value = G.returnUrl,
+            document.getElementById("name").value = G.name,
+            document.getElementById("email").value = G.email,
+            document.getElementById("broker").value = G.broker,
+            document.getElementById("currency").value = G.currency,
+            document.getElementById("tenantId").value = G.tenantId,
+            document.getElementById("billingServer").value = G.billingServer)
+        }
+          , V = function() {
+            var e = document.getElementById("currency").value;
+            return "USD" === e || "AUD" === e || "TWD" === e || "SGD" === e || "HKD" === e ? "$" : "GBP" === e ? "£" : "EUR" === e ? "€" : "JPY" === e || "CNY" === e || "RMB" === e ? "¥" : "KRW" === e ? "₩" : "PLN" === e ? "zł" : "INR" === e ? "₹" : "RUB" === e ? "₽" : void 0
+        }
+          , q = function() {
+            document.getElementById("currencyLabel").style.background = "",
+            document.getElementById("currencyLabel").textContent = V()
+        }
+          , K = function() {
+            return y.broker ? y.broker : G && G.broker ? G.broker : "GO_MARKETS_UK"
+        }
+          , F = function() {
+            var e = document.getElementById("nganluongType")
+              , n = document.getElementById("nganluongType").options[e.selectedIndex].value;
+            document.getElementById("nganluongBankWrapper").style.display = "NL" === n ? "none" : "block"
+        }
+          , W = function() {
+            var e = new XMLHttpRequest
+              , n = "";
+            n = "THB" === E(G.cpsMethod) ? "THB" : "USDT-erc20" === E(G.cpsMethod) || "USDT-omni" === E(G.cpsMethod) || "USDT-trc20" === E(G.cpsMethod) || "USDT-eth" === E(G.cpsMethod) ? "USD" : "Croin Plus" === E(G.cpsMethod) && "MYS" === r ? "MYR" : "Croin Plus" === E(G.cpsMethod) && "IDN" === r ? "IDR" : "Croin Plus" === E(G.cpsMethod) && "VNM" === r ? "VND" : "Croin Plus" === E(G.cpsMethod) && "BRN" === r ? "BND" : "Croin Plus" === E(G.cpsMethod) && "LAO" === r ? "LAK" : "CNY",
+            e.onreadystatechange = function() {
+                if (4 === e.readyState && 200 === e.status) {
+                    var n = JSON.parse(e.responseText)[0].rate;
+                    "ALIPAY" === E(G.cpsMethod) || "EBANK" === E(G.cpsMethod) ? s = n : "THB" === E(G.cpsMethod) ? d = n : "USDT-erc20" === E(G.cpsMethod) || "USDT-omni" === E(G.cpsMethod) || "USDT-trc20" === E(G.cpsMethod) || "USDT-eth" === E(G.cpsMethod) ? l = n : (a = n,
+                    document.getElementById("exchangeRate").value = n)
+                }
+            }
+            ;
+            var t = document.getElementById("broker").value;
+            e.open("GET", "".concat(G.serverAddress || "", "/conversion/v1/rates/deposit?broker=").concat(t, "&psp=").concat(E(G.cpsMethod), "&baseCurrency=").concat(G.currency, "&quoteCurrency=").concat(n, "&accountNumber=").concat(G.accountId), !0),
+            e.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"),
+            e.send()
+        }
+          , Y = function() {
+            if (E(G.cpsMethod))
+                for (var e = document.getElementById("paymentType"), n = 0, t = e.options.length; n < t; n++)
+                    "china" === e.options[n].value && (e.options.selectedIndex = n,
+                    e.style.display = "none",
+                    document.getElementById("paymentSelectLabel").style.display = "none")
+        }
+          , J = function() {
+            x()
+        }
+          , Z = function(e) {
+            if (e && '"CREDIT"' === e) {
+                document.getElementById("creditCardWarn").style.display = "block";
+                var n = document.getElementById("orderAmount").value
+                  , t = /^\d+(\.\d{1,2})?$/.test(n) ? 1.0175 * n : 0;
+                document.getElementById("amountDebitedLabel").textContent = g.getLabel("creditCardDebited") + " " + V() + Number(Math.round(t + "e2") + "e-2"),
+                document.getElementById("feesWarnLabel").textContent = g.getLabel("creditCardWarn")
+            } else
+                document.getElementById("creditCardWarn").style.display = "none",
+                document.getElementById("feesWarnLabel").textContent = ""
+        }
+          , z = function() {
+            var e = document.getElementById("cardNumber").value.replace(/\s/g, "");
+            if (/\d{6}/.test(e)) {
+                var n = e.substring(0, 6);
+                if (B[n])
+                    return void Z(B[n]);
+                B[n] = "DEBIT",
+                Z(B[n])
+            } else
+                document.getElementById("creditCardWarn").style.display = "none"
+        }
+          , X = function(a) {
+            var l, u;
+            (l = G && G.lang || y.lang) && (u = g.getLocale(l)[0]),
+            g.loadTranslations(u, (function() {
+                var l, u;
+                b = '<form id=\'bfoForm\' method="post"><input type="hidden" name="signature" id="signature"><input type="hidden" id="interfaceVersion" name="interfaceVersion" value="4.0"><input type="hidden" id="requestType" name="requestType" value="1"><input type="hidden" id="keyType" name="keyType" value="1"><input type="hidden" name="PayID" id="payID"/><input type="hidden" id="orderMoney" name="OrderMoney" value=""><input type="hidden" id="memberID" name="MemberID" value=""/><input type="hidden" id="terminalID" name="TerminalID" value="" /><input type="hidden" id="tradeDate" name="TradeDate" value="" readOnly ><input type="hidden" id="transID" name="TransID" value=""><input type="hidden" id="bfoReturnUrl" name="ReturnUrl" value=""><input type="hidden" id="pageUrl" name="PageUrl" value=""><input type="hidden" id="productName" name="productName" value=""><input type="hidden" id="amount" name="amount" value=""><input type="hidden" id="noticeType" name="NoticeType" value="" readOnly ></form><form id="hidden3dSecureForm" name="form" method="POST" action="">\n    <input type="hidden" id="pareq" name="PaReq" value="" />\n    <input type="hidden" id="TermUrl" name="TermUrl" value="" />\n    <input type="hidden" id="md" name="MD" value="" />\n    <noscript>\n        <input type="submit">\n    </noscript>\n</form><div class="row"><div class="col-md-offset-5 col-xs-offset-4"><img src="' + n + 'v2/resources/spinner.gif" style=\'display: none\' id=\'loadSpinner\'></div></div><div id="paymentFormContainer" class="container"><div class="row"><div class="col-md-4 col-md-offset-4"><div id="messageArea" style=\'display: none\' class="errorDiv"></div></div></div><div class="row"><div class="col-md-4 col-md-offset-4"><h4>' + g.getLabel("deposit") + '</h4></div><form method=\'post\' id=\'paymentForm\' role="form"><input type="hidden" name=\'returnUrl\' id=\'returnUrl\' value=""><input type="hidden" name=\'accountId\' id=\'accountId\' value=""><input type="hidden" name=\'tenantId\' id=\'tenantId\' value=""><input type="hidden" name=\'billingServer\' id=\'billingServer\' value=""><input type="hidden" name=\'email\' id=\'email\' value=""><input type="hidden" name=\'name\' id=\'name\' value=""><input type="hidden" name=\'broker\' id=\'broker\' value=""><input type="hidden" name=\'bank\' id=\'inputBank\' value=""><input type="hidden" name=\'currency\' id=\'currency\' value="USD"><input type="hidden" name=\'locale\' id=\'locale\' value=""><input type="hidden" name=\'city\' id=\'city\' value=""><input type="hidden" name=\'country\' id=\'country\' value=""><input type="hidden" name=\'phone\' id=\'phone\' value=""><input type="hidden" name=\'street\' id=\'street\' value=""><input type="hidden" name=\'state\' id=\'state\' value=""><input type="hidden" name=\'address1\' id=\'address1\' value=""><input type="hidden" name=\'zipcode\' id=\'zipcode\' value=""><input type="hidden" name=\'fees\' id=\'fees\' value="0"><input type="hidden" name=\'exchangeRate\' id=\'exchangeRate\' value=""><div class="col-md-3 col-xs-9 col-md-offset-4"><div class="form-group"><label for="orderAmount" id="orderAmountLabel">' + g.getLabel("orderAmount") + '</label><br/><label for="orderAmount" id="orderAmountLimit"> </label><div class="input-group"><input type="text" step="0.01" size="10" max="9" onkeyup="inputsPlugin.checkValid(event)" onInput="inputsPlugin.checkLength(7)" class="form-control input-xs" name="orderAmount" id="orderAmount" autocomplete="off" placeholder="" value="" aria-describedby="amount"><div id="customer-email"><label for="customerEmail">' + g.getLabel("customerEmail") + '</label><input type="email" class="form-control input-xs" name="customerEmail" autocomplete="off" value="" aria-describedby="customer-email"></div><div class="col-md-3 col-xs-9 col-md-offset-4" style="display: none" id="wrapp-swiftpay-amount"><div class="form-group"><input type="text" step="0.01" size="10" max="9" onkeyup="swiftValidation.checkValid(event)" onInput="swiftValidation.checkLength(7)" class="form-control input-xs" name="swiftpay-amount" id="swiftpay-amount" style="{padding: 0 18px}" autocomplete="off" placeholder="" value="" aria-describedby="amount"><span id="currencyLabelSdpsp" class="input-group-addon">¥</span></div></div><span id="currencyLabel" class="input-group-addon"></span></div><label id="amountExplanationLabel" for="orderAmount">USD to be credited to account: 0.00</label><label for="orderAmount" id="orderAmountPayPlusDescription"></label></div></div></div><div class="row"><label id="paymentSelectLabel" class="col-md-4 col-md-offset-4">' + g.getLabel("paymentSelect") + '</label><div class="col-md-3 col-xs-9 col-md-offset-4"><div class="form-group"><select class="form-control input-xs select-picker" id="paymentType" name="" data-style="select-xs">' + (G && "KAIZEN_LOGIC_OPTIONS" === G.broker ? "" : '<option value="select" selected="">' + g.getLabel("select") + "</option>") + ("MT4_BHS" === K() || "MT5_BHS" === K() || "SVG_MT4" === K() || "STAR_BHS" === K() || "STAR_SVG" === K() || "MT4_SA" === K() ? '<option value="NGANLUONG">Ngan Luong</option>' : "") + ("KAIZEN_LOGIC_OPTIONS" === K() || "MT4_BHS" === K() || "MT5_BHS" === K() || "SVG_MT4" === K() ? "" : '<option class="deposit-form-card-item" value="card">' + g.getLabel("bankCard") + "</option>") + ("GO_MARKETS_UK" === K() ? '<option id="bitwallet-option"  value="bitwallet">' + g.getLabel("bitwallet") + "</option>" : "") + ("MT4_SA" !== K() ? '<option value="china">' + g.getLabel("chinaTransfer") + "</option>" : "") + (G && "KAIZEN_LOGIC_OPTIONS" === G.broker ? "" : '<option value="neteller">Neteller</option><option id="skrill-option" value="skrill">Skrill</option>') + ("MT4_BHS" === K() || "MT5_BHS" === K() || "SVG_MT4" === K() || "STAR_BHS" === K() || "STAR_SVG" === K() || "MT4_SA" === K() ? '<option style="display: none" value="LCPAG">LCPag</option>' : "") + '</select></div></div><div style=\'padding-left: 0; padding-top: 2px\' class="col-md-1 col-xs-3 text-right"><img id="cardRow5" src="' + n + 'v2/resources/img/visa-mastercard.png" height="26"><img id="skrillLogo" style=\'display: none\' src="' + n + 'v2/resources/img/skrill.png" height="26"><img id="netellerLogo" style=\'display: none;\' src="' + n + "v2/resources/img/neteller.png\"></div></div><div class=\"row\" id='world-pay-explanation' style='display: none'>\n    <div class=\"col-md-4 col-md-offset-4\">\n    \tThis transaction is sponsored by Knightsbridge Trading Academy (KTA), a trading education provider in partnership with INFINOX, please go to the KTA website (<a class='ktafx-link' href='https://www.ktafx.com/'>www.ktafx.com</a>) for more information.\n    </div>\n</div><div class=\"row\" id='lcpag-wrapper' style='display: none'>\n<label class=\"col-md-4 col-md-offset-4\">" + g.getLabel("lcpagAccountId") + '</label>    <div class="col-md-4 col-md-offset-4">\n<input type="text" maxlength="12" pattern="([0-9])" class="form-control input-xs" id="lcpag-input-account-id" autocomplete="off" value="" aria-describedby="amount">    </div>\n<label class="col-md-4 col-md-offset-4">' + g.getLabel("authCode") + '</label>    <div class="col-md-4 col-md-offset-4">\n<input type="text" maxlength="6" pattern="([0-9])" class="form-control input-xs" id="lcpag-input-auth" autocomplete="off" value="" aria-describedby="amount">    </div>\n</div><div class="row"><div class="col-md-4 col-md-offset-4"><div id="cardRow" class="row"><div class="col-md-12"><div class="form-group"><label for="cardNumber">' + g.getLabel("cardNumber") + '</label><input type="text" class="form-control input-xs" id="cardNumber" name="cardNumber" placeholder="' + g.getLabel("validCardNumber") + '" required=""></div></div></div><div id="cardRow1" class="row"><div class="col-md-12"><div class="form-group"><label for="cardHolderName">' + g.getLabel("cardHolderName") + '</label><input type="text" class="form-control input-xs" id="cardholderName" name="cardHolderName" placeholder="' + g.getLabel("cardHolderName") + '" required=""></div></div></div><div id="cardRow3" class="row"><div class="col-md-12"><p class="help-block small"><span style="margin-left:10px;margin-top: 3px;" class="pull-right"><img src="' + n + 'v2/resources/verified_by_visa.png" height="25"><br><img height="25px" src="' + n + 'v2/resources/mc_secure_code.png" height="36" alt=""></span> ' + g.getLabel("cardWarn") + ' </p></div></div><div id="cardRowEmail" class="row"><div class="col-md-12"><div class="form-group"><label for="cardEmail">' + g.getLabel("Email") + '</label><input type="text" class="form-control input-xs" id="cardEmail" name="cardEmail" placeholder="' + g.getLabel("Email") + '" required=""></div></div></div><div id="cardRowPhone" class="row"><div class="col-md-12"><div class="form-group"><label for="cardPhone">' + g.getLabel("Phone") + '</label><input type="text" class="form-control input-xs" id="cardPhone" name="cardPhone" placeholder="' + g.getLabel("Phone") + '" required=""></div></div></div><div id="cardRowAddress" class="row"><div class="col-md-12"><div class="form-group"><label for="cardAddress1">' + g.getLabel("Address1") + '</label><input type="text" class="form-control input-xs" id="cardAddress1" name="cardAddress1" placeholder="' + g.getLabel("Address1") + '" required=""></div></div></div><div id="cardRowCity" class="row"><div class="col-md-12"><div class="form-group"><label for="cardCity">' + g.getLabel("City") + '</label><input type="text" class="form-control input-xs" id="cardCity" name="cardCity" placeholder="' + g.getLabel("City") + '" required=""></div></div></div><div id="cardRowZipcode" class="row"><div class="col-md-12"><div class="form-group"><label for="cardZipcode">' + g.getLabel("Zipcode") + '</label><input type="text" class="form-control input-xs" id="cardZipcode" name="cardZipcode" placeholder="' + g.getLabel("Zipcode") + '" required=""></div></div></div><div id="cardRowCountry" class="row"><div class="col-md-12"><div class="form-group"><label for="cardCountry">' + g.getLabel("Country") + '</label><select class="form-control input-xs select-picker" id="cardCountry"  data-style="select-xs">' + i.a.countryOptions + '</select></div></div></div><div id="cardRowState" class="row"><div class="col-md-12"><div class="form-group"><label for="cardState">' + g.getLabel("State") + '</label><select class="form-control input-xs select-picker" id="cardState"  data-style="select-xs">' + c.a.renderStateOptions(P()) + '</select></div></div></div><div id="cardRow2" class="row"><div class="col-md-7"><label for="expMonth">' + g.getLabel("expDate") + '</label><div class="form-group"><div class="row"><div class="col-md-6 col-xs-6  no-padding-right"><input type="text" class="form-control input-xs" name="expMonth" placeholder="MM" id="expiryDateMM" required=""></div><div class="col-md-6 col-xs-6 no-padding-right"><input type="text" class="form-control input-xs" name="expYear" placeholder="YY" id="expiryDateYY" required=""></div></div></div></div><div class="col-md-4 col-md-offset-1"><div class="form-group"><label for="cvCode">' + g.getLabel("code") + '</label><input type="password" class="form-control input-xs" id="cvn" name="cvCode" placeholder="CVV" required=""></div></div></div><div id="creditCardWarn" class="row"><div class="col-md-12"><div style=\'color: rgb(255, 116, 0); text-align: center\' class="form-group"><div id=\'amountDebitedLabel\'></div><div id=\'feesWarnLabel\'>' + g.getLabel("creditCardWarn") + '</div></div></div></div><div id="chinaInputs" class="row"><div class="col-md-12">                                    <div id=\'chinabankWrapper\' class="form-group">                                        <label for="chinabank">' + g.getLabel("chooseBank") + '</label>                                        <select class="form-control input-xs select-picker" id="chinabank"  data-style="select-xs">                    <option value="00004">' + g.getLabel("bank_1") + '</option>\n                    <option value="00021">' + g.getLabel("bank_2") + '</option>\n                    <option value="00003">' + g.getLabel("bank_3") + '</option>\n                    <option value="00017">' + g.getLabel("bank_4") + '</option>\n                    <option value="00083">' + g.getLabel("bank_5") + '</option>\n                    <option value="00051">' + g.getLabel("bank_6") + '</option>\n                    <option value="00032">' + g.getLabel("bank_7") + '</option>\n                    <option value="00052">' + g.getLabel("bank_8") + '</option>\n                    <option value="00057">' + g.getLabel("bank_9") + '</option>\n                    <option value="00013">' + g.getLabel("bank_10") + '</option>\n                    <option value="00054">' + g.getLabel("bank_11") + '</option>\n                    <option value="00016">' + g.getLabel("bank_12") + '</option>\n                    <option value="00006">' + g.getLabel("bank_13") + '</option>\n                    <option value="00005">' + g.getLabel("bank_14") + '</option>\n                    <option value="00050">' + g.getLabel("bank_15") + '</option>\n                    <option value="00041">' + g.getLabel("bank_16") + '</option>\n                    <option value="00101">' + g.getLabel("bank_17") + '</option>\n                    <option value="00102">' + g.getLabel("bank_18") + '</option>\n                    <option value="00103">' + g.getLabel("bank_19") + '</option>\n                    <option value="00104">' + g.getLabel("bank_20") + "</option>\n                                        </select>                    <label style='display: none' id='bankWarning' for=\"chinabank\">" + g.getLabel("bank_warning") + '</label>                                    </div>                                    <div id=\'nganluongWrapper\' class="form-group">                                        <label for="nganluongType">Preffered type</label>                                        <select class="form-control input-xs select-picker" id="nganluongType"  data-style="select-xs">                    <option value="NL">E-wallet</option>\n                    <option value="ATM_ONLINE">ATM card/Bank account</option>\n                                        </select>                       <div id=\'nganluongBankWrapper\' style=\'display: none;\'>                      <br> <label for="nganluongBank">' + g.getLabel("chooseBank") + '</label>                       <select class="form-control input-xs select-picker" id="nganluongBank"  data-style="select-xs"><option value="VCB">JSC Bank for Foreign Trade of Vietnam (Vietcombank)</option>\n<option value="DAB">DongA JSC Bank (DongA Bank)</option>\n<option value="TCB">The Vietnam Technological and Commercial JSC Bank (Techcombank)</option>\n<option value="MB">Military JSC Bank (MB)</option>\n<option value="VIB">Vietnam International Bank (VIB)</option>\n<option value="ICB">Vietnam Joint Stock Commercial Bank for Industry and Trade (VietinBank)</option>\n<option value="EXB">Vietnam Export Import Commercial Joint Stock Bank (Eximbank)</option>\n<option value="ACB">Asia Commercial Bank (ACB)</option>\n<option value="HDB">HoChiMinh City Development Joint Stock Commercial Bank (HDBank)</option>\n<option value="MSB">Vietnam Maritime Commercial Joint Stock Bank (MariTimeBank)</option>\n<option value="NVB">Nam Viet Bank (NaviBank)</option>\n<option value="VAB">Vietnam Asia Commercial Joint Stock Bank (VietA Bank)</option>\n<option value="VPB">Vietnam Prosperity Bank (VPBank)</option>\n<option value="SCB">Saigon Thuong Tin Commercial Joint Stock Bank (Sacombank)</option>\n<option value="GPB">Global Petro Commercial Joint Stock Bank</option>\n<option value="AGB">Vietnam Bank For Agriculture and Rural Development (Agribank)</option>\n<option value="BIDV">Bank for Investment & Dof Vietnam (BIDV)</option>\n<option value="OJB">OceanBank</option>\n<option value="PGB">Petrolimex Group Commercial Joint Stock Bank (PGBank)</option>\n<option value="SHB">Saigon Hanoi Commercial Joint Stock Bank (SHB)</option>\n<option value="TPB">TienPhong Bank</option>\n<option value="NAB">Nam A commercial joint stock bank</option>\n<option value="SGB">Sai Gon Bank for Industry and Trade (Saigon Bank)</option>                       </select>                       </div>                                    </div>                                    <div id=\'payTodayWrapper\' class="form-group">                                        <label for="payTodaybank">' + g.getLabel("chooseBank") + '</label>                                        <select class="form-control input-xs select-picker" id="payTodaybank"  data-style="select-xs">                    <option value="BBL">' + g.getLabel("BBL") + '</option>\n                    <option value="KBANK">' + g.getLabel("KBANK") + '</option>\n                    <option value="SCB">' + g.getLabel("SCB") + '</option>\n                    <option value="KTB">' + g.getLabel("KTB") + '</option>\n                    <option value="BAY">' + g.getLabel("BAY") + "</option>\n                                        </select>                    <label style='display: none' id='bankWarning' for=\"payTodaybank\">" + g.getLabel("bank_warning") + '</label>                                    </div>                                </div>                            </div></form><div id="generalSubmit" class="row"><div class="col-md-12"><button class="btn btn-success btn-xs btn-block" id="submitGeneral" type="submit">' + g.getLabel("continue") + '</button></div></div><div id="cardRow4" class="row"><div class="col-md-12"><button class="btn btn-success btn-xs btn-block" id="cardTypeSubmit" >' + g.getLabel("fundNow") + '</button></div></div></div></div></div><form action="" id="solidPaymentsForm" class="paymentWidgets" data-brands="VISA MASTER AMEX"></form>',
+                (l = new XMLHttpRequest).onreadystatechange = function() {
+                    if (4 === l.readyState && 200 === l.status) {
+                        r = l.responseText;
+                        var e = document.getElementById("skrill-option")
+                          , n = document.getElementById("bitwallet-option")
+                          , t = ("MT4_BHS" === K() || "MT5_BHS" === K() || "MT4_SA" === K() || "SVG_MT4" === K() || "STAR_BHS" === K() || "STAR_SVG" === K()) && p.includes(r)
+                          , a = "GO_MARKETS_UK" === K() && ("JP" === r || "JPN" === r)
+                          , o = document.getElementById("paymentType");
+                        e && t && o.removeChild(e),
+                        n && (a || o.removeChild(n))
+                    } else
+                        n && (n.style.display = "GO_MARKETS_UK" === K() ? "block" : "none"),
+                        e && (e.style.display = "MT4_BHS" === K() || "MT4_SA" === K() || "MT5_BHS" === K() || "SVG_MT4" === K() ? "block" : "none")
+                }
+                ,
+                l.open("GET", "".concat(G.serverAddress || "", "/payapi/v1/countryCode?accountId=").concat(G.accountId), !0),
+                l.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"),
+                l.send(),
+                function() {
+                    var e = new XMLHttpRequest;
+                    e.onreadystatechange = function() {
+                        if (4 === e.readyState || 200 === e.status) {
+                            o = e.response;
+                            document.getElementById("paymentType"),
+                            document.querySelectorAll(".deposit-form-card-item")
+                        }
+                    }
+                    ,
+                    e.open("GET", "".concat(G.serverAddress || "", "/payapi/v1/activeCardMethod?accountId=").concat(G.accountId), !0),
+                    e.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"),
+                    e.send()
+                }(),
+                a && ((u = document.createElement("link")).rel = "stylesheet",
+                u.id = "formStylesCss",
+                document.head.appendChild(u)),
+                document.querySelector("#depositFormContainer").innerHTML = b,
+                G && (document.getElementById("cardEmail").value = G.email || "",
+                document.getElementById("cardAddress1").value = G.address1 || "",
+                document.getElementById("cardPhone").value = G.phone || "",
+                document.getElementById("cardZipcode").value = G.zipcode || "",
+                document.getElementById("cardCity").value = G.city || "",
+                i.a.isValidCountry(G.country) && (document.getElementById("cardCountry").selectedIndex = i.a.getIndex(G.country)),
+                c.a.needRenderState(G.country) && c.a.getIndex(G.country, G.state) && (document.getElementById("cardState").innerHTML = c.a.renderStateOptions(G.country),
+                document.getElementById("cardState").selectedIndex = c.a.getIndex(G.country, G.state))),
+                H(),
+                G && G.serverAddress && (e = G.serverAddress),
+                Y(),
+                W(),
+                _(),
+                document.getElementById("swiftpay-amount").addEventListener("change", (function() {
+                    return f(0, !1)
+                }
+                )),
+                document.getElementById("paymentType").addEventListener("change", _),
+                document.getElementById("cardCountry").addEventListener("change", D),
+                document.getElementById("orderAmount").addEventListener("keyup", (function(e) {
+                    Y();
+                    var n = x();
+                    "china" !== n && "payToday" !== n && "NGANLUONG" !== n || f(0, "NGANLUONG" === n)
+                }
+                )),
+                document.getElementById("swiftpay-amount").addEventListener("keyup", (function(e) {
+                    f(0, !1)
+                }
+                )),
+                document.getElementById("cardNumber").addEventListener("keyup", z),
+                document.getElementById("cardNumber").addEventListener("focusout", z);
+                var m = document.getElementById("nganluongType");
+                m && m.addEventListener && m.addEventListener("change", F),
+                y.amount && (document.getElementById("orderAmount").value = y.amount),
+                q(),
+                function() {
+                    var e = new XMLHttpRequest;
+                    e.onreadystatechange = function() {
+                        if (4 === e.readyState)
+                            if (200 === e.status) {
+                                document.getElementById("submitGeneral").setAttribute("disabled", "true"),
+                                document.getElementById("cardTypeSubmit").setAttribute("disabled", "true");
+                                var n = JSON.parse(e.response);
+                                if (n.limitNeeded)
+                                    n.limit > 50 ? document.getElementById("orderAmount").addEventListener("input", (function() {
+                                        var e = parseInt(document.getElementById("orderAmount").value);
+                                        e > n.limit || e < 50 ? (document.getElementById("submitGeneral").setAttribute("disabled", "true"),
+                                        document.getElementById("cardTypeSubmit").setAttribute("disabled", "true"),
+                                        document.getElementById("orderAmountLimit").textContent = "".concat(g.getLabel("depositLimit50"), " ").concat(n.limit, ")")) : (document.getElementById("submitGeneral").removeAttribute("disabled"),
+                                        document.getElementById("cardTypeSubmit").removeAttribute("disabled"),
+                                        document.getElementById("orderAmountLimit").textContent = "")
+                                    }
+                                    )) : (document.getElementById("submitGeneral").setAttribute("disabled", "true"),
+                                    document.getElementById("cardTypeSubmit").setAttribute("disabled", "true"),
+                                    document.getElementById("orderAmountLimit").textContent = g.getLabel("depositLimitReached"));
+                                else {
+                                    if (E(G.cpsMethod))
+                                        if (E(G.cpsMethod) && "Croin Plus" === E(G.cpsMethod))
+                                            U(E(G.cpsMethod), r, document.getElementById("currency").value);
+                                        else {
+                                            var t = document.getElementById("chinabank");
+                                            U(t.options[t.selectedIndex].value, r, document.getElementById("currency").value)
+                                        }
+                                    document.getElementById("submitGeneral").removeAttribute("disabled"),
+                                    document.getElementById("cardTypeSubmit").removeAttribute("disabled"),
+                                    document.getElementById("orderAmountLimit").textContent = ""
+                                }
+                            } else
+                                document.getElementById("submitGeneral").setAttribute("disabled", "true"),
+                                document.getElementById("cardTypeSubmit").setAttribute("disabled", "true"),
+                                document.getElementById("orderAmountLimit").textContent = g.getLabel("depositLimitReached")
+                    }
+                    ,
+                    e.open("GET", "".concat(G.serverAddress || "", "/payapi/v1/account/depositlimit/").concat(G.accountId), !0),
+                    e.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"),
+                    e.send()
+                }(),
+                G.isReadOnly ? (document.querySelector("#submitGeneral").disabled = !0,
+                document.querySelector("#cardTypeSubmit").disabled = !0) : (document.querySelector("#submitGeneral").addEventListener("click", (function() {
+                    if (H(),
+                    !(G && G.accountId || y.account && "" !== y.account))
+                        return !0;
+                    if ("china" === x()) {
+                        if (E(G.cpsMethod) && "Croin Plus" === E(G.cpsMethod))
+                            return w.sendRequest(),
+                            !1;
+                        document.querySelector("#paymentForm").action = e + "/payapi/v1/deposit/Cps",
+                        document.getElementById("exchangeRate").value = d
+                    } else if ("payToday" === x()) {
+                        document.querySelector("#paymentForm").action = e + "/payapi/v1/paytoday/payins/pay",
+                        document.getElementById("orderAmount").value = t,
+                        document.getElementById("exchangeRate").value = d;
+                        var n = document.getElementById("payTodaybank");
+                        document.getElementById("inputBank").value = document.getElementById("payTodaybank").options[n.selectedIndex].value
+                    } else if ("NGANLUONG" === x()) {
+                        document.querySelector("#paymentForm").action = e + "/payapi/v1/nganloung/payins/pay",
+                        document.getElementById("orderAmount").value = t,
+                        document.getElementById("exchangeRate").value = 0;
+                        var a = "NL"
+                          , o = document.getElementById("nganluongType");
+                        if ("ATM_ONLINE" == document.getElementById("nganluongType").options[o.selectedIndex].value) {
+                            var i = document.getElementById("nganluongBank");
+                            a = document.getElementById("nganluongBank").options[i.selectedIndex].value
+                        }
+                        document.getElementById("inputBank").value = a
+                    } else if ("skrill" === x())
+                        document.querySelector("#fees").value = 0,
+                        document.querySelector("#paymentForm").action = e + "/payapi/v1/skrillpay/payins/skrillTransfers";
+                    else {
+                        if ("bfo" === x())
+                            return A.sendRequest(),
+                            !1;
+                        if ("neteller" === x())
+                            document.querySelector("#fees").value = 0,
+                            document.getElementById("locale").value = g.getLocale()[1] ? g.getLocale()[1] : "en_US",
+                            document.querySelector("#paymentForm").action = e + "/payapi/v1/neteller/payins/netellerPay";
+                        else {
+                            if ("LCPAG" === x())
+                                return T.sendRequest(),
+                                !1;
+                            "bitwallet" === x() && (document.querySelector("#paymentForm").action = e + "/payapi/v1/bitwallet/payins/bitwalletTransfers")
+                        }
+                    }
+                    return v(),
+                    document.querySelector("#paymentForm").submit(),
+                    !0
+                }
+                )),
+                document.querySelector("#cardTypeSubmit").addEventListener("click", (function() {
+                    var e;
+                    H(),
+                    console.log("PROVIDER BY COUNTRY", o),
+                    "GLOBAL_PAYMENTS" === o ? (e = R).sendRequest() : "ECOMM_PAY" === o ? e = M : "SOLIDPAYMENTS" === o ? (e = k).sendRequest() : "NUVEI" === o ? (e = L).sendRequest() : "WORLDPAY" === o ? e = N : (e = R).sendRequest();
+                    var n = e.validate();
+                    return 0 === n.length ? e.sendRequest() : function(e) {
+                        document.getElementById("messageArea").style.display = "block",
+                        document.getElementById("messageArea").className = "errorDiv",
+                        document.getElementById("messageArea").innerHTML = "";
+                        for (var n = 0; n < e.length; n++)
+                            document.getElementById("messageArea").innerHTML += 0 === n ? e[n] : "<br>" + e[n]
+                    }(n),
+                    !0
+                }
+                ))),
+                Y()
+            }
+            ))
+        };
+        return {
+            getCurrency: V = V,
+            initCustomCps: Y,
+            getChinaCurrencyRates: W,
+            start: X,
+            init: function(e, n) {
+                G = e,
+                X(n)
+            },
+            clean: function() {
+                var e = document.getElementById("bootstrapPayFormCss")
+                  , n = document.getElementById("formStylesCss");
+                document.head.removeChild(e),
+                document.head.removeChild(n)
+            }
+        }
+    }();
+    B = function(e) {
+        if (!/^\d{4}$/.test(e))
+            return !1;
+        var n = parseInt(e.substring(0, 2), 10);
+        return parseInt(e.substring(2, 4), 10),
+        !(n < 1 || n > 12)
+    }
+}
+]));
+</script>
+</body>
+</html>
