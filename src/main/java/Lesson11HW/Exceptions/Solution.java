@@ -4,7 +4,7 @@ public class Solution {
 
     public static void main(String[] args) {
         int i = -1;
-        Exception.printNumber(-1);
+        Exception.printNumber(1);
         try {
             Exception.printNumber(i);
         } catch (IllegalArgumentException e) {
